@@ -5,26 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header - Footer source</title>
+    <!-- Tailwind CSS -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- FontAwesome 5 -->
     <script src="https://kit.fontawesome.com/88fcee8aa9.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">    <!-- Base script for all files -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header id="header" class="shadow-md">
-        <div class="max-w-6xl mx-auto border border-red-600 flex justify-between">
+    <!-- Header, Light Version -->
+    <nav class="shadow-md">
+        <div class="max-w-6xl mx-auto flex justify-between">
+            <!-- Icon -->
             <div>
-                <img src="../assets/logo-bg-removed.svg" alt="logo" class="w-12 py-2 px-1">
+                <a href="./index.html"><img src="../assets/logo-bg-removed.svg" alt="logo" class="w-10 my-2 mx-4"></a>
             </div>
-            <div class="flex items-center pr-10">
+            <!-- Desktop View -->
+            <div class="hidden sm:flex items-center pr-10 text-3xl font-light uppercase">
                 <a href="./index.html" class="mx-6 text-center middle active">Home</a>
                 <a href="./news.html" class="mx-6 text-center middle">News</a>
                 <a href="./blogs.html" class="mx-6 text-center middle">Blogs</a>
             </div>
-            <!-- <i class="fas fa-bars m-2"></i> -->
+            <!-- Mobile Icon -->
+            <button id="mobile-menu-button" class="sm:hidden flex items-center">
+                <i class="fas fa-bars m-2 text-3xl mr-5"></i>
+            </button>
         </div>
-    </header>
-    <footer>
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="sm:hidden flex flex-col font-light hidden" >
+            <a href="./index.html" class="w-screen text-center">Home</a>
+            <a href="./news.html" class="w-screen text-center">News</a>
+            <a href="./blogs.html" class="w-screen text-center">Blogs</a>
+        </div>
+    </nav>
+    <!-- Header, No BG Color Version -->
 
-    </footer>
+    <!-- JQuery 3.6.0 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- JS Code to do responsive header -->
+    <script src="../js/app.js"></script>
 </body>
 </html>
