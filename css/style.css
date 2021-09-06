@@ -5,12 +5,12 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-a.middle
+.middle
 {
     position: relative;
 }
 
-a.middle:before{
+.middle:before{
     content: "";
     position: absolute;
     width: 100%;
@@ -23,12 +23,12 @@ a.middle:before{
     transition: all 0.3s ease-in-out;
 }
 
-a.middle:hover:before {
+.middle:hover:before {
     visibility: visible;
     transform: scaleX(1);
 }
 
-a.active:before{
+.active:before{
     visibility: visible;
     transform: scaleX(1);
     transition: all 0ms ease;

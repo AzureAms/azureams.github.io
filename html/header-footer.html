@@ -21,10 +21,11 @@
         <div class="max-w-6xl mx-auto flex justify-between">
             <!-- Icon -->
             <div>
-                <a href="./index.html"><img src="../assets/logo-bg-removed.svg" alt="logo" class="w-10 my-2 mx-4"></a>
+                <a href="./index.html"><img src="../assets/logo.svg" alt="logo" class="w-10 my-2 mx-4"></a>
             </div>
             <!-- Desktop View -->
             <div class="hidden sm:flex items-center pr-10 text-3xl font-light uppercase">
+                <!-- Ở trang nào thì mình sẽ set class active ở trang đấy -->
                 <a href="./index.html" class="mx-6 text-center middle active">Home</a>
                 <a href="./news.html" class="mx-6 text-center middle">News</a>
                 <a href="./blogs.html" class="mx-6 text-center middle">Blogs</a>
@@ -35,14 +36,43 @@
             </button>
         </div>
         <!-- Mobile Dropdown -->
-        <div id="mobile-menu" class="sm:hidden flex flex-col font-light hidden" >
-            <a href="./index.html" class="w-screen text-center">Home</a>
-            <a href="./news.html" class="w-screen text-center">News</a>
-            <a href="./blogs.html" class="w-screen text-center">Blogs</a>
+        <div id="mobile-menu" class="sm:hidden flex flex-col hidden text-2xl uppercase" >
+            <a href="./index.html" class="pl-4 py-2 w-screen">Home</a>
+            <a href="./news.html" class="pl-4 py-2 w-screen">News</a>
+            <a href="./blogs.html" class="pl-4 py-2 w-screen">Blogs</a>
         </div>
     </nav>
     <!-- Header, No BG Color Version -->
 
+    <!-- Footer -->
+    <footer>
+        <div class="flex flex-col md:flex-row justify-between bg-black">
+            <!-- Icon -->
+            <div class="order-2 my-auto hidden md:block">
+                <img src="../assets/logo.svg" alt="logo" class="w-36 my-2 mx-4">
+            </div>
+            <!-- Contacts -->
+            <div class="order-1 mx-auto md:m-6">
+                <p class="text-gray-300 font-light text-center text-xl mt-4 md:mt-0">Contact us</p>
+                <div class="flex flex-col m-2">
+                    <div class="flex my-2">
+                        <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=azureamsprogramming@gmail.com"><i class="fas fa-phone-alt text-gray-300 text-lg md:text-xl"></i></a>
+                        <p class="text-gray-300 mx-4 font-light text-xs md:text-base mt-1 md:mt-0">(+84) 912 282 910</p>
+                    </div>
+                    <div class="flex my-2">
+                        <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=azureamsprogramming@gmail.com"><i class="far fa-envelope text-gray-300 text-lg md:text-xl"></i></a>
+                        <p class="text-gray-300 mx-4 font-light text-xs md:text-base mt-1 md:mt-0">azureamsprogramming@gmail.com</p>
+                    </div>
+                    
+                    <div class="flex my-2">
+                        <a href="https://www.facebook.com/azureamsprogramming"><i class="fab fa-facebook text-gray-300 text-lg md:text-xl"></i></a>
+                        <a href="https://www.facebook.com/azureamsprogramming"><p class="text-gray-300 mx-4 font-light hover:text-white text-xs md:text-base mt-1 md:mt-0">https://www.facebook.com/azureamsprogramming</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
     <!-- JQuery 3.6.0 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- JS Code to do responsive header -->
