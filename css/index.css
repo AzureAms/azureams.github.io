@@ -1,0 +1,36 @@
+body {
+  background-color: #f3f3f3;
+}
+
+#btn-container {
+  width: 98.666667%;
+}
+
+#news-container div > div > img {
+  width: 100%;
+}
+
+#btn-container button {
+  background: #131F28;
+  box-shadow: -4px 7px 7px -1px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+
+#landing-section {
+  position: relative;
+}
+#landing-section #bg-img-container {
+  filter: blur(10px);
+  background: black;
+}
+
+.hide-scroll-bar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
+
+/*# sourceMappingURL=index.css.map */
