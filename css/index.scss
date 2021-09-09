@@ -29,3 +29,10 @@ body{
 .hide-scroll-bar::-webkit-scrollbar {
     display: none;
 }
+.core-image{
+    z-index:2;
+}
+.content{
+    top:2.5rem;
+    background: linear-gradient(180deg, rgba(2, 15, 24, 0.92) 0%, #020F18 100%);
+}
