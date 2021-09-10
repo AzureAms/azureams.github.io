@@ -4,7 +4,9 @@ body{
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-
+.navbar{
+    transition: all 0.5s ease-in-out;
+}
 .middle
 {
     position: relative;
@@ -33,4 +35,11 @@ body{
     transform: scaleX(1);
     transition: all 0ms ease;
 }
-  
+
+.nav-active{
+    background-color: #020F18 !important;
+    color: #fff;
+}
+.nav-active .middle::before{
+    background-color: #fff;
+}
