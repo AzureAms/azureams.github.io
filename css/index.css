@@ -2,6 +2,10 @@ body {
   background-color: #f3f3f3;
 }
 
+#bg-cover {
+  position: relative;
+}
+
 #btn-container {
   width: 98.666667%;
 }
