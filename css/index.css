@@ -46,4 +46,8 @@ body {
   background: linear-gradient(180deg, rgba(2, 15, 24, 0.92) 0%, #020F18 100%);
 }
 
+.skeleton {
+  animation: skeleton-loading 1s linear;
+}
+
 /*# sourceMappingURL=index.css.map */
