@@ -19,7 +19,7 @@ const _init_index = () => {
     //     console.log(user);
     // })
     // model.getContent("https://raw.githubusercontent.com/trungnt2910/MemoryModule.NET/master/README.md")
-    model.loadPostbyID("JagJ60owETGAS5RA6JhA")
+    view.setPost();
     view.setRelatedPosts();
 }
 

@@ -14,15 +14,12 @@ view.setRelatedPosts = () => {
         console.log(res);
         for (id in res) {
             console.log(res[id]);
-            view.createMiniPost(res[id].title,res[id].content);
+            view.createMiniPost(res[id].title,res[id].shortened_content);
         }
     })
 }
 
 view.createMiniPost = (title, content, truncate=3) => {
-    // cut content
-
-    //
     $(`#posts-container`).append(
         `
         <div class="my-4 w-10/12 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500">
@@ -38,4 +35,14 @@ view.createMiniPost = (title, content, truncate=3) => {
         </div>            
         `
     )
+}
+
+view.setPost = async () => {
+    var id = "JagJ60owETGAS5RA6JhA";
+    var doc = await model.loadPostbyID(id);
+    view.setElementContent('#content-title', doc.title)
+    //
+    if (doc.contentURL) {
+        model.getContent(doc.contentURL).then(view.setCMSContent)
+    }
 }

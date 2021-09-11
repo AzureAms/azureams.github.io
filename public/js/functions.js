@@ -60,36 +60,23 @@ model.loadPostsbyTags = async (tagName) => {
 }
 
 model.loadAllPosts = async () => {
-    return firebase.firestore().collection('posts').get()
-    .then((querySnapshot) => {
-        var res = {};
-        querySnapshot.forEach((doc) => {
-            console.log(doc.id, " => ", doc.data())
-            res[doc.id] = doc.data();
-        })
-        return res;
+    var querySnapshot = await firebase.firestore().collection('posts').get()
+    var res = {};
+    querySnapshot.forEach((doc) => {
+        console.log(doc.id, " => ", doc.data())
+        res[doc.id] = doc.data();
     })
+    return res;
 }
 
-model.loadPostbyID = async (id) => {
+model.loadPostbyID = (id) => {
     return firebase.firestore().collection('posts').doc(id).get()
-    .then((res) => {
-        const doc = res.data()
-        console.log(doc);
-        view.setElementContent('#content-title', doc.title)
-        //
-        if (doc.contentURL) {
-            model.getContent(doc.contentURL).then(view.setCMSContent)
-        }
-    })
-
+    .then(res => res.data())
 }
 
 
-model.getContent = async (url) => {
-    return fetch(url).then((res) => {
-        return res.text()
-    })
+model.getContent = (url) => {
+    return fetch(url).then(res => res.text())
 }
 
 
