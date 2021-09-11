@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Tailwind CSS -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/components.min.css" />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css"
+  />
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/utilities.min.css" />
     <!-- FontAwesome 5 -->
     <script src="https://kit.fontawesome.com/88fcee8aa9.js" crossorigin="anonymous"></script>
     <!-- Google Fonts -->
@@ -28,9 +34,9 @@
        </div>
 
         <div class="flex absolute top-0 pt-60">
-            <div id="content-container" class="w-4/6 ml-8 bg-white mb-72 shadow-lg overflow-hidden shadow-xl">
+            <div class="w-4/6 ml-8 bg-white mb-72 shadow-lg overflow-hidden shadow-xl">
                 <div class="ml-16 mt-8">
-                    <h1 class="font-bold text-8xl my-4 mr-8">Title</h1>
+                    <h1 class="font-bold text-8xl my-4 mr-8" id="content-title">Title</h1>
                     <div class="text-md text-light font-light pb-2 flex items-center">
                         <i class="far fa-clock"></i>
                         <p class="mx-2">19-02-2004</p>
@@ -38,31 +44,8 @@
                         <i class="far fa-user ml-16"></i>
                         <p class="mx-2">Author</p>
                     </div>
-                    <div class="my-16 font-light text-xl">
-                        <p class="my-4">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsa magnam odit quisquam sunt!
-                        </p>
-                        <p class="my-4">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsa magnam odit quisquam sunt!
-                        </p>
-                        <p class="my-4">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsa magnam odit quisquam sunt!
-                        </p>
-                        <p class="my-4">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsa magnam odit quisquam sunt!
-                        </p>
-                        <div class="pd-2">
-                            <img src="../assets/ORDz1m1-q0I.png" alt="">
-                        </div>
-                        <p class="my-4">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsa magnam odit quisquam sunt!
-                        </p>
-                        <p class="my-4">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsa magnam odit quisquam sunt!
-                        </p>
-                        <p class="my-4">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsa magnam odit quisquam sunt!
-                        </p>
+                    <div class="my-16 prose" id="content-container">
+
                     </div>
 
                     
@@ -73,7 +56,7 @@
                     Related Posts
                 </h1>
                 <div class="border-2 border-black border-solid bg-black mb-4"></div>
-                <div class="w-10/12 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500">
+                <div class="my-4 w-10/12 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500">
                     <div class="p-4 bg-white flex items-start">
                         <img class="mr-4 rounded-md" alt="" src="../assets/post-example.png">
                         <div class="overflow-y-scroll hide-scroll-bar max-h-40">
@@ -95,7 +78,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-10/12 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500">
+                <div class="my-4 w-10/12 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500">
                     <div class="p-4 bg-white flex items-start">
                         <img class="mr-4 rounded-md" alt="" src="../assets/post-example.png">
                         <div class="overflow-y-scroll hide-scroll-bar max-h-40">
@@ -110,6 +93,11 @@
         </div>
     </div>
 
+    <!-- <form action="" id="debug">
+        <input type="text" name="id">
+        <button>Load</button>
+    </form> -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-firestore.js"></script>
