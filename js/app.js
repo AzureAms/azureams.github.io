@@ -3,4 +3,7 @@ $(document).ready(function(){
 		$("#mobile-menu").slideToggle()
 		$("#mobile-menu").css("display","flex")
 	})
+	$("#read-more-button").click(() => {
+		window.location.href = "./html/news.html"
+	})
 })

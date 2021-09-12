@@ -34,9 +34,9 @@
             <!-- Desktop View -->
             <div class="hidden sm:flex items-center pr-10 text-3xl font-light uppercase hrefs">
                 <!-- Ở trang nào thì mình sẽ set class active ở trang đấy -->
-                <a href="../index.html" class="mx-6 text-center middle">Home</a>
-                <a href="../html/news.html" class="mx-6 text-center middle active">News</a>
-                <a href="../html/blogs.html" class="mx-6 text-center middle">Blogs</a>
+                <a href="../index.html" class="mx-6 text-center middle">Trang chủ</a>
+                <a href="../html/news.html" class="mx-6 text-center middle active">News & Blogs</a>
+                <a href="../html/about-us.html" class="mx-6 text-center middle">Về CLB</a>
             </div>
             <!-- Mobile Icon -->
             <button id="mobile-menu-button" class="sm:hidden flex items-center">
@@ -45,22 +45,22 @@
         </div>
         <!-- Mobile Dropdown -->
         <div id="mobile-menu" class="sm:hidden flex flex-col hidden text-2xl uppercase" >
-            <a href="../index.html" class="pl-4 py-2 w-screen">Home</a>
-            <a href="../html/news.html" class="pl-4 py-2 w-screen">News</a>
-            <a href="../html/blogs.html" class="pl-4 py-2 w-screen">Blogs</a>
+            <a href="../index.html" class="pl-4 py-2 w-screen">Trang chủ</a>
+            <a href="../html/news.html" class="pl-4 py-2 w-screen">News & Blogs</a>
+            <a href="../html/about-us.html" class="pl-4 py-2 w-screen">Về CLB</a>
         </div>
     </nav>
 
     <!-- Page title -->
     <section>
-        <h1 class="text-3xl md:text-5xl font-light py-4 text-center md:text-left md:mx-24 lg:mx-36">AzureAms News and Blogs</h1>
+        <h1 class="text-3xl md:text-5xl font-light py-4 text-center md:text-left md:mx-24 lg:mx-36">AzureAms News & Blogs</h1>
         <hr class="text-black">
     </section>
 
     <section>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-4 md:my-8 mx-12 md:mx-24 lg:mx-36">
-            <div class="rounded-lg cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500 lg:col-span-2 lg:row-span-2">
-                <img alt="" src="../assets/bg-news.png" class="w-full overflow-hidden"/>
+            <div class="rounded-lg cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500 lg:col-span-2 lg:row-span-2 ">
+                <img alt="" src="../assets/thumbnails/azureams_website_0_1release.png" class="w-full overflow-hidden"/>
                 <div class="h-full p-4 bg-white">
                     <div class="author text-md text-light pb-2 flex justify-between">
                         <div class="flex align-center">
@@ -68,10 +68,28 @@
                             <p class="pl-1">AzureAms</p>
                         </div>
                         <div>
-                            <p class="px-2 text-white rounded article-category bg-blue-700">Website 0.1 released</p>
+                            <p class="px-2 text-white rounded article-category bg-red-700">Releases</p>
                         </div>
                     </div>
-                    <h1 class="font-bold text-2xl">Title</h1>
+                    <h1 class="font-bold text-2xl">Ra mắt website Beta</h1>
+                    <p class="font-light text-base md:text-lg lg:text-xl">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsa magnam odit quisquam sunt!
+                    </p>
+                </div>
+            </div>
+            <div class="rounded-lg cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500">
+                <img alt="" src="../assets/thumbnails/timetable_beta_0.1.png" class="w-full overflow-hidden"/>
+                <div class="h-full p-4 bg-white">
+                    <div class="author text-md text-light pb-2 flex justify-between">
+                        <div class="flex align-center">
+                            <i class="fas fa-user-edit mt-1"></i>
+                            <p class="pl-1">AzureAms</p>
+                        </div>
+                        <div>
+                            <p class="px-2 text-white rounded article-category bg-red-700">Releases</p>
+                        </div>
+                    </div>
+                    <h1 class="font-bold text-2xl">Ra mắt Timetable App Beta</h1>
                     <p class="font-light text-base md:text-lg lg:text-xl">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsa magnam odit quisquam sunt!
                     </p>
@@ -86,25 +104,7 @@
                             <p class="pl-1">Author</p>
                         </div>
                         <div>
-                            <p class="px-2 text-white rounded article-category bg-green-700">Blogs</p>
-                        </div>
-                    </div>
-                    <h1 class="font-bold text-2xl">Title</h1>
-                    <p class="font-light text-base md:text-lg lg:text-xl">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsa magnam odit quisquam sunt!
-                    </p>
-                </div>
-            </div>
-            <div class="rounded-lg cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500">
-                <img alt="" src="../assets/bg-news.png" class="w-full overflow-hidden"/>
-                <div class="h-full p-4 bg-white">
-                    <div class="author text-md text-light pb-2 flex justify-between">
-                        <div class="flex align-center">
-                            <i class="fas fa-user-edit mt-1"></i>
-                            <p class="pl-1">Author</p>
-                        </div>
-                        <div>
-                            <p class="px-2 text-white rounded article-category bg-blue-700">News</p>
+                            <p class="px-2 text-white rounded article-category bg-red-600">Releases</p>
                         </div>
                     </div> 
                     <h1 class="font-bold text-2xl">Title</h1>
@@ -131,60 +131,6 @@
                     </p>
                 </div>
             </div>
-            <!-- <div class="rounded-lg cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500">
-                <img alt="" src="../assets/bg-news.png" class="w-full overflow-hidden"/>
-                <div class="h-full p-4 bg-white">
-                    <div class="author text-md text-light pb-2 flex justify-between">
-                        <div class="flex align-center">
-                            <i class="fas fa-user-edit mt-1"></i>
-                            <p class="pl-1">Author</p>
-                        </div>
-                        <div>
-                            <p class="px-2 text-white rounded article-category bg-blue-700">News</p>
-                        </div>
-                    </div>
-                    <h1 class="font-bold text-2xl">Title</h1>
-                    <p class="font-light text-base md:text-lg lg:text-xl">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsa magnam odit quisquam sunt!
-                    </p>
-                </div>
-            </div>
-            <div class="rounded-lg cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500">
-                <img alt="" src="../assets/bg-news.png" class="w-full overflow-hidden"/>
-                <div class="h-full p-4 bg-white">
-                    <div class="author text-md text-light pb-2 flex justify-between">
-                        <div class="flex align-center">
-                            <i class="fas fa-user-edit mt-1"></i>
-                            <p class="pl-1">Author</p>
-                        </div>
-                        <div>
-                            <p class="px-2 text-white rounded article-category bg-blue-700">News</p>
-                        </div>
-                    </div>
-                    <h1 class="font-bold text-2xl">Title</h1>
-                    <p class="font-light text-base md:text-lg lg:text-xl">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsa magnam odit quisquam sunt!
-                    </p>
-                </div>
-            </div>
-            <div class="rounded-lg cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500">
-                <img alt="" src="../assets/bg-news.png" class="w-full overflow-hidden"/>
-                <div class="h-full p-4 bg-white">
-                    <div class="author text-md text-light pb-2 flex justify-between">
-                        <div class="flex align-center">
-                            <i class="fas fa-user-edit mt-1"></i>
-                            <p class="pl-1">Author</p>
-                        </div>
-                        <div>
-                            <p class="px-2 text-white rounded article-category bg-blue-700">News</p>
-                        </div>
-                    </div>
-                    <h1 class="font-bold text-2xl">Title</h1>
-                    <p class="font-light text-base md:text-lg lg:text-xl">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsa magnam odit quisquam sunt!
-                    </p>
-                </div>
-            </div> -->
         </div>
     </section>
 
@@ -196,7 +142,7 @@
             </div>
             <!-- Contacts -->
             <div class="order-1 mx-auto md:mx-12 md:my-6">
-                <p class="text-gray-300 font-light text-center text-lg md:text-2xl mt-4 md:mt-0">Contact Us</p>
+                <p class="text-gray-300 font-light text-center text-lg md:text-2xl mt-4 md:mt-0">Liên hệ</p>
                 <div class="flex flex-col m-2">
                     <div class="flex my-2">
                         <i class="fas fa-phone-alt text-gray-300 text-lg md:text-xl"></i>
@@ -214,7 +160,7 @@
                 </div>
             </div>
         </div>
-    </footer>   
+    </footer>
     <!-- JQuery 3.6.0 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="../js/news.js"></script>
