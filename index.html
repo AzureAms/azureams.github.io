@@ -81,14 +81,19 @@
             Bài viết gần đây
         </h1>
         <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 grid-rows-1 pt-10" id="news-container">
-            <div class="flex justify-center items-center">
+            <div class="flex justify-center items-stretch">
 
-                <div class="w-11/12 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500 ">
+                <div class="w-11/12 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500 bg-white" onclick="window.location.href='./html/articles/gioi-thieu-ve-website.html'">
                     <img alt="" src="assets/thumbnails/azureams_website_0_1release.png"/>
                     <div class="p-4 bg-white">
-                        <div class="author text-md text-light pb-2 flex items-center">
-                            <i class="fas fa-user-edit"></i>
-                            <p class="pl-1">AzureAms</p>
+                        <div class="author text-md text-light pb-2 flex justify-between">
+                            <div class="flex align-center">
+                                <i class="fas fa-user-edit mt-1"></i>
+                                <p class="pl-1">AzureAms PR team</p>
+                            </div>
+                            <div>
+                                <p class="px-2 text-white rounded article-category bg-red-600">Releases</p>
+                            </div>
                         </div>
                         <h1 class="font-bold text-2xl">Ra mắt website Beta</h1>
                         <p class="font-light text-xl">
@@ -97,14 +102,19 @@
                     </div>
                 </div>
             </div>
-            <div class="flex justify-center items-center hidden md:flex">
+            <div class="flex justify-center items-stretch hidden md:flex">
 
-                <div class="w-11/12 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500 ">
+                <div class="w-11/12 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500 bg-white" onclick="window.location.href='./html/articles/article-timetable.html'">
                     <img alt="" src="assets/thumbnails/timetable_beta_0.1.png"/>
                     <div class="p-4 bg-white">
-                        <div class="author text-md text-light pb-2 flex items-center">
-                            <i class="fas fa-user-edit"></i>
-                            <p class="pl-1">AzureAms</p>
+                        <div class="author text-md text-light pb-2 flex justify-between">
+                            <div class="flex align-center">
+                                <i class="fas fa-user-edit mt-1"></i>
+                                <p class="pl-1">AzureAms PR team</p>
+                            </div>
+                            <div>
+                                <p class="px-2 text-white rounded article-category bg-red-600">Releases</p>
+                            </div>
                         </div>
                         <h1 class="font-bold text-2xl">Ra mắt Timetable App Beta</h1>
                         <p class="font-light text-xl">
@@ -113,25 +123,30 @@
                     </div>
                 </div>
             </div>
-            <div class="flex justify-center items-center hidden lg:flex">
+            <div class="flex justify-center  items-stretch hidden lg:flex" onClick="window.location.href='./html/articles/tips-cpp-trong-phong-thi.html';">
 
-                <div class="w-11/12  rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500">
-                    <img alt="" src="assets/bg-news.png"/>
+                <div class="w-11/12  rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500" onclick="window.location.href='./html/articles/tips-cpp-trong-phong-thi.html'">
+                    <img alt="" src="assets/thumbnails/meo_cpp_trong_phong_thi.jpg"/>
                     <div class="p-4 bg-white">
-                        <div class="author text-md text-light pb-2 flex items-center">
-                            <i class="fas fa-user-edit"></i>
-                            <p class="pl-1">tr.vhoanggg</p>
+                        <div class="author text-md text-light pb-2 flex justify-between">
+                            <div class="flex align-center">
+                                <i class="fas fa-user-edit mt-1"></i>
+                                <p class="pl-1">AzureAms PR team</p>
+                            </div>
+                            <div>
+                                <p class="px-2 text-white rounded article-category bg-green-600">Blog</p>
+                            </div>
                         </div>
-                        <h1 class="font-bold text-2xl">Review: Samsung Z Flip 3</h1>
+                        <h1 class="font-bold text-2xl">Một số mẹo C++ trong phòng thi</h1>
                         <p class="font-light text-xl">
-                            The Z Flip 3 is the first "affordable" foldable phone, starting at $999 with a 6.7-inch FHD+ inner display...                        
+                            Có lẽ, không có kỳ thi nào đòi hỏi kỹ năng thi cao hơn các kỳ thi học sinh giỏi môn Tin học. Đã có rất nhiều thí sinh...
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="flex justify-end hover:shadow-xl" id="btn-container" id="read-more-btn">
-            <button id="read-more-button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 ">
+        <div class="flex justify-end " id="btn-container" id="read-more-btn">
+            <button id="read-more-button hover:shadow-xl" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 " onClick="window.location.href='./html/news.html';">
                 Đọc thêm <i class="fas fa-angle-right pl-1"></i>
             </button>
         </div>
@@ -145,8 +160,8 @@
         <!--Core Information Cards-->
         <div class="flex lg:justify-center overflow-x-scroll pb-28 xl-hide-scroll-bar">
             <div class="flex flex-nowrap lg:ml-2 md:ml-2 ml-2">
-                
-                
+
+
                 <div class="inline-block px-3 relative w-64 max-w-xs flex justify-center">
                     <!--Avatar-->
                     <div class="core-image rounded ">
@@ -155,6 +170,9 @@
                     <!--Details-->
                     <div class="w-48 h-48 content absolute overflow-hidden rounded-lg shadow-md bg-white hover:shadow-2xl transition-shadow duration-300 ease-in-out flex justify-end p-5 content-end flex-col">
                         <h1 class="text-gray-50 text-center font-bold text-xl pb-2">Thành Trung</h1>
+                        <p class="text-gray-50 font-light text-center">
+                            <i class="fab fa-github mr-1"></i> <a href="https://github.com/trungnt2910">trungnt2910</a>
+                        </p>
                         <p class="text-gray-50 font-light text-center">
                             Chủ tịch CLB
                         </p>
@@ -182,6 +200,9 @@
                     <div class="w-48 h-48 content absolute overflow-hidden rounded-lg shadow-md bg-white hover:shadow-2xl transition-shadow duration-300 ease-in-out flex justify-end p-5 content-end flex-col">
                         <h1 class="text-gray-50 text-center font-bold text-xl pb-2">Lê Minh</h1>
                         <p class="text-gray-50 font-light text-center">
+                            <i class="fab fa-github mr-1"></i> <a href="https://github.com/g9-9g">g9-9g</a>
+                        </p>
+                        <p class="text-gray-50 font-light text-center">
                             Phó chủ tịch CLB
                         </p>
                     </div>
@@ -195,6 +216,9 @@
                     <div class="w-48 h-48 content absolute overflow-hidden rounded-lg shadow-md bg-white hover:shadow-2xl transition-shadow duration-300 ease-in-out flex justify-end p-5 content-end flex-col">
                         <h1 class="text-gray-50 text-center font-bold text-xl pb-2">Tùng Lâm</h1>
                         <p class="text-gray-50 font-light text-center">
+                            <i class="fab fa-github mr-1"></i> <a href="https://github.com/phamlam24">phamlam24</a>
+                        </p>
+                        <p class="text-gray-50 font-light text-center">
                             Project Leader - Web
                         </p>
                     </div>
@@ -207,6 +231,9 @@
                     <!--Details-->
                     <div class="w-48 h-48 content absolute overflow-hidden rounded-lg shadow-md bg-white hover:shadow-2xl transition-shadow duration-300 ease-in-out flex justify-end p-5 content-end flex-col">
                         <h1 class="text-gray-50 text-center font-bold text-xl pb-2">Anh Đức</h1>
+                        <p class="text-gray-50 font-light text-center">
+                            <i class="fab fa-github mr-1"></i> <a href="https://github.com/buianhduc">buianhduc</a>
+                        </p>
                         <p class="text-gray-50 font-light text-center">
                             Project Leader - Web
                         </p>
