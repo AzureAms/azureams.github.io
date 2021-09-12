@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - AzureAms</title>
+    <!-- Tailwind CSS -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- FontAwesome 5 -->
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/88fcee8aa9.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSSes-->
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+    <!--Logo-->
+    <link rel="shortcut icon" href="../assets/favicon_io/favicon.ico">
+    <link rel="icon" href="../assets/favicon_io/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" href="../assets/favicon_io/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="../assets/favicon_io/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="../assets/favicon_io/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" href="../assets/favicon_io/android-chrome-512x512.png" sizes="512x512">
+</head>
+<body>
+    <nav class="shadow-md z-10 sticky top-0 navbar nav-active bg-white">
+        <div class="max-w-6xl mx-auto flex justify-between">
+            <!-- Icon -->
+            <div>
+                <a href="../index.html"><img src="../assets/logo.png" alt="logo" class="w-16 my-2 mx-4"></a>
+            </div>
+            <!-- Desktop View -->
+            <div class="hidden sm:flex items-center pr-10 text-3xl font-light uppercase hrefs">
+                <!-- Ở trang nào thì mình sẽ set class active ở trang đấy -->
+                <a href="../index.html" class="mx-6 text-center middle">Trang chủ</a>
+                <a href="../html/news.html" class="mx-6 text-center middle">News & Blogs</a>
+                <a href="../html/about-us.html" class="mx-6 text-center middle active">Về CLB</a>
+            </div>
+            <!-- Mobile Icon -->
+            <button id="mobile-menu-button" class="sm:hidden flex items-center">
+                <i class="fas fa-bars m-2 text-3xl mr-5"></i>
+            </button>
+        </div>
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="sm:hidden flex flex-col hidden text-2xl uppercase" >
+            <a href="../index.html" class="pl-4 py-2 w-screen">Trang chủ</a>
+            <a href="../html/news.html" class="pl-4 py-2 w-screen">News & Blogs</a>
+            <a href="../html/about-us.html" class="pl-4 py-2 w-screen">Về CLB</a>
+        </div>
+    </nav>
+
+    <section>
+        <p class="text-3xl md:text-5xl font-light py-4 text-center md:text-left md:mx-24 lg:mx-36">Chúng tôi là ai?</p>
+        <hr class="text-black">
+    </section>
+    
+    <section class="my-10 mx-6">
+        <div class="border-2 border-gray-200 py-4 px-6 shadow-md">
+            <h1 class="font-bold text-center text-2xl pb-4">AzureAms Programming Club là câu lạc bộ chuyên sâu lập trình đầu tiên và duy nhất tại trường THPT Chuyên Hà Nội - Amsterdam.</h1>
+            <hr>
+            <p class="pt-4">
+                Azure là một sân chơi mới mẻ cho các bạn học sinh có đam mê lập trình cũng như có sự hứng 
+                thú với bộ môn CNTT (Công Nghệ Thông Tin). Giữa phong trào học tập lập trình trong phạm vi 
+                THCS & THPT Amsterdam nói chung hay tất cả trường học trên Hà Nội nói riêng đang trở nên 
+                ngày càng thịnh hành và thu hút được đông đảo các bạn học sinh, AzureAms Programing Club 
+                được thành lập vào năm 2021!
+            </p>
+            <p class="pt-4">
+                Tại câu lạc bộ, các bạn sẽ được làm quen với những yêu cầu của việc phát triển các ứng dụng 
+                trong một môi trường chuyên nghiệp. Bên cạnh đó, chúng mình mong muốn có thể tạo dựng lên 
+                một cộng đồng với trọng tâm về lập trình, cùng nhau tham gia một số dự án mã nguồn mở trong 
+                và ngoài trường.
+            </p>
+            <p class="pt-4">
+                Trong năm, chúng mình dự định sẽ tổ chức một số sự kiện như Hackathon thường niên, 
+                hay 5v5 Bug Hunt (thể thao điện tử). Các dự án sẽ mang lại cho từng thành viên có 
+                cơ hội tiếp xúc với nhiều mảng lập trình khác nhau nhằm phát triển và phát huy vai 
+                trò của bản thân một cách hết sức. Ngoài ra, một điểm đặc biệt tại Azure chính là do 
+                công việc có tính chất chủ yếu là online nên dịch bệnh sẽ hầu như không ảnh hưởng đến 
+                hoạt động của CLB.
+            </p>
+            <p class="pt-4">
+                Bạn có niềm hứng thú sâu sắc với các sản phẩm điện tử, hay nhận thấy bản thân có khả 
+                năng lập trình mà chưa biết áp dụng ở đâu?
+            </p>
+            <p class="pt-4">
+                Chào mừng bạn tới AZUREAMS PROGRAMMING CLUB!
+            </p>
+        </div>
+    </section>
+    
+    <section>
+        <!--Core team section-->
+        <div class="flex flex-col m-auto p-auto">
+        <!--Title-->
+        <h1 class="flex py-5 lg:px-20 md:px-10 px-5 lg:mx-40 md:mx-20 mx-5 font-bold text-4xl text-gray-800 justify-center uppercase">
+            Core Team
+        </h1>
+        <!--Core Information Cards-->
+        <div class="flex lg:justify-center overflow-x-scroll pb-28 xl-hide-scroll-bar">
+            <div class="flex flex-nowrap lg:ml-2 md:ml-2 ml-2">
+                <div class="inline-block px-3 relative w-64 max-w-xs flex justify-center h-48">
+                    <!--Avatar-->
+                    <div class="core-image rounded ">
+                        <img alt="" class="w-20 h-20" src="../assets/ntt.png">
+                    </div>
+                    <!--Details-->
+                    <div class="w-48 h-48 content absolute overflow-hidden rounded-lg shadow-md bg-white hover:shadow-2xl transition-shadow duration-300 ease-in-out flex justify-end p-5 content-end flex-col">
+                        <h1 class="text-gray-50 text-center font-bold text-xl pb-2">Thành Trung</h1>
+                        <p class="text-gray-50 font-light text-center">
+                            Chủ tịch CLB
+                        </p>
+                    </div>
+                </div>
+                <div class="inline-block px-3 relative w-64 max-w-xs flex justify-center">
+                    <!--Avatar-->
+                    <div class="core-image rounded ">
+                        <img alt="" class="w-20 h-20" src="../assets/tvh.png">
+                    </div>
+                    <!--Details-->
+                    <div class="w-48 h-48 content absolute overflow-hidden rounded-lg shadow-md bg-white hover:shadow-2xl transition-shadow duration-300 ease-in-out flex justify-end p-5 content-end flex-col">
+                        <h1 class="text-gray-50 text-center font-bold text-xl pb-2">Viết Hoàng</h1>
+                        <p class="text-gray-50 font-light text-center">
+                            Phó chủ tịch CLB
+                        </p>
+                    </div>
+                </div>
+                <div class="inline-block px-3 relative w-64 max-w-xs flex justify-center">
+                    <!--Avatar-->
+                    <div class="core-image rounded ">
+                        <img alt="" class="w-20 h-20" src="../assets/lmn.png">
+                    </div>
+                    <!--Details-->
+                    <div class="w-48 h-48 content absolute overflow-hidden rounded-lg shadow-md bg-white hover:shadow-2xl transition-shadow duration-300 ease-in-out flex justify-end p-5 content-end flex-col">
+                        <h1 class="text-gray-50 text-center font-bold text-xl pb-2">Lê Minh</h1>
+                        <p class="text-gray-50 font-light text-center">
+                            Phó chủ tịch CLB
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pb-16">
+        <h1 class="font-bold text-center text-4xl pb-4">CÁC DỰ ÁN</h1>
+        <div class="flex flex-col md:flex-row">
+            <div class="flex justify-center items-center py-4">
+                <div class="w-11/12 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500 ">
+                    <img alt="" src="../assets/thumbnails/timetable_beta_0.1.png"/>
+                    <div class="p-4 bg-white">
+                        <!-- <div class="author text-md text-light pb-2 flex items-center">
+                            <i class="fas fa-user-edit"></i>
+                            <p class="pl-1">AzureAms</p>
+                        </div> -->
+                        <h1 class="font-bold text-2xl">Timetable App</h1>
+                        <p class="font-light text-xl">
+                            Đơn giản hóa việc học Online. Join lớp học chỉ bằng 1 click. TKB mang khắp nơi chỉ bằng 1 link Website.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center items-center py-4">
+                <div class="w-11/12 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500 ">
+                    <img alt="" src="../assets/thumbnails/azureams_website_0_1release.png"/>
+                    <div class="p-4 bg-white">
+                        <!-- <div class="author text-md text-light pb-2 flex items-center">
+                            <i class="fas fa-user-edit"></i>
+                            <p class="pl-1">AzureAms</p>
+                        </div> -->
+                        <h1 class="font-bold text-2xl">Website App</h1>
+                        <p class="font-light text-xl">
+                            Website giới thiệu CLB với khả năng update vô tận. Sử dụng các kĩ thuật và nền tảng code mới nhất.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="flex flex-col md:flex-row justify-between bg-black">
+            <!-- Icon -->
+            <div class="order-2 my-auto hidden md:block">
+                <img src="../assets/logo.png" alt="logo" class="w-40 mx-20">
+            </div>
+            <!-- Contacts -->
+            <div class="order-1 mx-auto md:mx-12 md:my-6">
+                <p class="text-gray-300 font-light text-center text-lg md:text-2xl mt-4 md:mt-0">Liên hệ</p>
+                <div class="flex flex-col m-2">
+                    <div class="flex my-2">
+                        <i class="fas fa-phone-alt text-gray-300 text-lg md:text-xl"></i>
+                        <p class="text-gray-300 mx-4 font-light text-xs md:text-base mt-1 md:mt-0">(+84) 912 282 910</p>
+                    </div>
+                    <div class="flex my-2">
+                        <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=azureamsprogramming@gmail.com"><i class="far fa-envelope text-gray-300 text-lg md:text-xl"></i></a>
+                        <p class="text-gray-300 mx-4 font-light text-xs md:text-base mt-1 md:mt-0">azureamsprogramming@gmail.com</p>
+                    </div>
+
+                    <div class="flex my-2">
+                        <a href="https://www.facebook.com/azureamsprogramming"><i class="fab fa-facebook text-gray-300 text-lg md:text-xl"></i></a>
+                        <a href="https://www.facebook.com/azureamsprogramming"><p class="text-gray-300 mx-4 font-light hover:text-white text-xs md:text-base mt-1 md:mt-0">https://www.facebook.com/azureamsprogramming</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JQuery 3.6.0 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/news.js"></script>
+</body>
+</html>
