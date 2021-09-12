@@ -37,9 +37,9 @@
             <!-- Desktop View -->
             <div class="hidden sm:flex items-center pr-10 text-3xl font-light uppercase hrefs">
                 <!-- Ở trang nào thì mình sẽ set class active ở trang đấy -->
-                <a href="./index.html" class="mx-6 text-center middle active">Home</a>
-                <a href="./html/news.html" class="mx-6 text-center middle">News</a>
-                <a href="html/article-page.html" class="mx-6 text-center middle">Blogs</a>
+                <a href="./index.html" class="mx-6 text-center middle active">Trang chủ</a>
+                <a href="./html/news.html" class="mx-6 text-center middle">News & Blogs</a>
+                <a href="html/article-page.html" class="mx-6 text-center middle">Về CLB</a>
             </div>
             <!-- Mobile Icon -->
             <button id="mobile-menu-button" class="sm:hidden flex items-center">
@@ -48,9 +48,9 @@
         </div>
         <!-- Mobile Dropdown -->
         <div id="mobile-menu" class="sm:hidden flex flex-col hidden text-2xl uppercase" >
-            <a href="./index.html" class="pl-4 py-2 w-screen">Home</a>
-            <a href="./html/news.html" class="pl-4 py-2 w-screen">News</a>
-            <a href="html/article-page.html" class="pl-4 py-2 w-screen">Blogs</a>
+            <a href="./index.html" class="pl-4 py-2 w-screen">Trang chủ</a>
+            <a href="./html/news.html" class="pl-4 py-2 w-screen">Tin tức & Blogs</a>
+            <a href="html/article-page.html" class="pl-4 py-2 w-screen">Về CLB</a>
         </div>
     </nav>
     <!--Overview of the club-->
@@ -63,8 +63,9 @@
              style="z-index:2">
             <!--Left text-->
             <div class="self-center">
-                <h1 class="text-3xl lg:text-5xl text-white pb-3 font-bold lg:text-left text-center">Welcome to
-                    AzureAms</h1>
+                <h1 class="text-3xl lg:text-5xl text-white pb-3 font-bold lg:text-left text-center">
+                    Chào mừng đến CLB AzureAms
+                </h1>
                 <p class="text-white lg:text-2xl text-md text-center lg:text-left">Câu lạc bộ chuyên sâu lập trình đầu tiên và duy nhất tại trường THPT Chuyên Hà Nội - Amsterdam</p>
             </div>
             <!--Club logo on the right-->
@@ -77,19 +78,19 @@
     <!--Recent news section-->
     <div class="recent-news justify-center pt-4 m-10 ">
         <h1 class="text-4xl text-black font-bold uppercase text-center text-gray-800">
-            Recent news
+            Bài viết gần đây
         </h1>
         <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 grid-rows-1 pt-10" id="news-container">
             <div class="flex justify-center items-center">
 
-                <div class="w-11/12 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500">
-                    <img alt="" src="assets/bg-news.png"/>
+                <div class="w-11/12 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500 ">
+                    <img alt="" src="assets/thumbnails/azureams_website_0_1release.png"/>
                     <div class="p-4 bg-white">
                         <div class="author text-md text-light pb-2 flex items-center">
                             <i class="fas fa-user-edit"></i>
                             <p class="pl-1">AzureAms</p>
                         </div>
-                        <h1 class="font-bold text-2xl">Website 0.1 released</h1>
+                        <h1 class="font-bold text-2xl">Ra mắt website Beta</h1>
                         <p class="font-light text-xl">
                             Sau hơn 1 tuần làm việc, bản beta đầu tiên của website đã hoàn thiện. Website được host bằng GitHub Pages...
                         </p>
@@ -98,14 +99,14 @@
             </div>
             <div class="flex justify-center items-center hidden md:flex">
 
-                <div class="w-11/12 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500">
-                    <img alt="" src="assets/bg-news.png"/>
+                <div class="w-11/12 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500 ">
+                    <img alt="" src="assets/thumbnails/timetable_beta_0.1.png"/>
                     <div class="p-4 bg-white">
                         <div class="author text-md text-light pb-2 flex items-center">
                             <i class="fas fa-user-edit"></i>
                             <p class="pl-1">AzureAms</p>
                         </div>
-                        <h1 class="font-bold text-2xl">Timetable App beta version</h1>
+                        <h1 class="font-bold text-2xl">Ra mắt Timetable App Beta</h1>
                         <p class="font-light text-xl">
                             Để giúp đơn giản hóa việc tham gia lớp học online, AzureAms đã tạo ra sản phẩm website + app Timetable...
                         </p>
@@ -130,8 +131,8 @@
             </div>
         </div>
         <div class="flex justify-end hover:shadow-xl" id="btn-container" id="read-more-btn">
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 ">
-                READ MORE <i class="fas fa-angle-right pl-1"></i>
+            <button id="read-more-button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 ">
+                Đọc thêm <i class="fas fa-angle-right pl-1"></i>
             </button>
         </div>
     </div>
@@ -139,12 +140,12 @@
     <div class="flex flex-col m-auto p-auto">
         <!--Title-->
         <h1 class="flex py-5 lg:px-20 md:px-10 px-5 lg:mx-40 md:mx-20 mx-5 font-bold text-4xl text-gray-800 justify-center uppercase">
-            Our core team
+            Core Team
         </h1>
         <!--Core Information Cards-->
         <div class="flex lg:justify-center overflow-x-scroll pb-28 xl-hide-scroll-bar">
             <div class="flex flex-nowrap lg:ml-2 md:ml-2 ml-2">
-                <div class="inline-block px-3 relative w-64 max-w-xs flex justify-center order-4 xl:order-1">
+                <div class="inline-block px-3 relative w-64 max-w-xs flex justify-center order-1">
                     <!--Avatar-->
                     <div class="core-image rounded ">
                         <img alt="" class="w-20 h-20" src="./assets/ptl.png">
@@ -157,7 +158,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="inline-block px-3 relative w-64 max-w-xs flex justify-center order-2 xl:order-2">
+                <div class="inline-block px-3 relative w-64 max-w-xs flex justify-center order-2">
                     <!--Avatar-->
                     <div class="core-image rounded ">
                         <img alt="" class="w-20 h-20" src="./assets/lmn.png">
@@ -170,7 +171,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="inline-block px-3 relative w-64 max-w-xs flex justify-center order-1 xl:order-3">
+                <div class="inline-block px-3 relative w-64 max-w-xs flex justify-center order-3">
                     <!--Avatar-->
                     <div class="core-image rounded ">
                         <img alt="" class="w-20 h-20" src="./assets/ntt.png">
@@ -183,7 +184,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="inline-block px-3 relative w-64 max-w-xs flex justify-center order-3 xl:order-4">
+                <div class="inline-block px-3 relative w-64 max-w-xs flex justify-center order-4">
                     <!--Avatar-->
                     <div class="core-image rounded ">
                         <img alt="" class="w-20 h-20" src="./assets/tvh.png">
@@ -196,7 +197,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="inline-block px-3 relative w-64 h-32 max-w-xs flex justify-center order-5 xl:order-5">
+                <div class="inline-block px-3 relative w-64 h-32 max-w-xs flex justify-center order-5">
                     <!--Avatar-->
                     <div class="core-image rounded ">
                         <img alt="" class="w-20 h-20" src="./assets/ducbui.png">
@@ -220,7 +221,7 @@
             </div>
             <!-- Contacts -->
             <div class="order-1 mx-auto md:mx-12 md:my-6">
-                <p class="text-gray-300 font-light text-center text-lg md:text-2xl mt-4 md:mt-0">Contact Us</p>
+                <p class="text-gray-300 font-light text-center text-lg md:text-2xl mt-4 md:mt-0">Liên hệ</p>
                 <div class="flex flex-col m-2">
                     <div class="flex my-2">
                         <i class="fas fa-phone-alt text-gray-300 text-lg md:text-xl"></i>
