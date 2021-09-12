@@ -14,15 +14,15 @@
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- Custom CSSes-->
-    <link href="../css/style.css" rel="stylesheet">
-    <link href="../css/article.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/article.css" rel="stylesheet">
     <!--Logo-->
-    <link href="../assets/favicon_io/favicon.ico" rel="shortcut icon">
-    <link href="../assets/favicon_io/favicon-16x16.png" rel="icon" sizes="16x16">
-    <link href="../assets/favicon_io/favicon-32x32.png" rel="icon" sizes="32x32">
-    <link href="../assets/favicon_io/apple-touch-icon.png" rel="icon" sizes="180x180">
-    <link href="../assets/favicon_io/android-chrome-192x192.png" rel="icon" sizes="192x192">
-    <link href="../assets/favicon_io/android-chrome-512x512.png" rel="icon" sizes="512x512">
+    <link href="../../assets/favicon_io/favicon.ico" rel="shortcut icon">
+    <link href="../../assets/favicon_io/favicon-16x16.png" rel="icon" sizes="16x16">
+    <link href="../../assets/favicon_io/favicon-32x32.png" rel="icon" sizes="32x32">
+    <link href="../../assets/favicon_io/apple-touch-icon.png" rel="icon" sizes="180x180">
+    <link href="../../assets/favicon_io/android-chrome-192x192.png" rel="icon" sizes="192x192">
+    <link href="../../assets/favicon_io/android-chrome-512x512.png" rel="icon" sizes="512x512">
 </head>
 <body>
 <!--Body view-->
@@ -32,14 +32,14 @@
         <div class="max-w-6xl mx-auto flex justify-between">
             <!-- Icon -->
             <div>
-                <a href="../index.html"><img alt="logo" class="w-16 my-2 mx-4" src="../assets/logo.png"></a>
+                <a href="../../index.html"><img alt="logo" class="w-16 my-2 mx-4" src="../../assets/logo.png"></a>
             </div>
             <!-- Desktop View -->
             <div class="hidden sm:flex items-center pr-10 text-3xl font-light uppercase hrefs">
                 <!-- Ở trang nào thì mình sẽ set class active ở trang đấy -->
-                <a class="mx-6 text-center middle" href="../index.html">Home</a>
-                <a class="mx-6 text-center middle active" href="./news.html">News</a>
-                <a class="mx-6 text-center middle" href="./article-page.html">About Us</a>
+                <a class="mx-6 text-center middle" href="../../index.html">TRANG CHỦ</a>
+                <a class="mx-6 text-center middle active" href="../news.html">News & Blogs</a>
+                <a class="mx-6 text-center middle" href="../about-us.html">Về CLB</a>
             </div>
             <!-- Mobile Icon -->
             <button class="sm:hidden flex items-center" id="mobile-menu-button">
@@ -48,9 +48,9 @@
         </div>
         <!-- Mobile Dropdown -->
         <div class="sm:hidden flex flex-col hidden text-2xl uppercase" id="mobile-menu">
-            <a class="pl-4 py-2 w-screen" href="../index.html">Home</a>
-            <a class="pl-4 py-2 w-screen" href="./news.html">News</a>
-            <a class="pl-4 py-2 w-screen" href="./article-page.html">About Us</a>
+            <a class="pl-4 py-2 w-screen" href="../../index.html">Trang Chủ</a>
+            <a class="pl-4 py-2 w-screen" href="../news.html">News & Blogs</a>
+            <a class="pl-4 py-2 w-screen" href="../about-us.html">Về CLB</a>
         </div>
     </nav>
     <div>
@@ -280,7 +280,7 @@ Press any key to continue . . .
                     (Ở trong Dev-C++, "Compiler Settings" có thể truy cập ở `Tools -> Compiler Options`. Nhớ đánh dấu
                     "Add the following commands when calling the compiler", và thêm options vào ô chữ ở dưới.)
                 </p>
-                <img alt="" src="../assets/Huong-Dan-Debug-Cpp-Img-1.png">
+                <img alt="" src="../../assets/Huong-Dan-Debug-Cpp-Img-1.png">
                 <h1 class="text-bold text-xl mb-3 lg:text-2xl">Một vài lời bình luận thêm:</h1>
                 <p class="text-justify font-light sm:text-md mt-3">
                     - Tên <code>DEBUG</code>rất phổ thông, và dễ bị đụng với các headers hệ thống. Để tránh sự đụng độ
@@ -301,20 +301,37 @@ Press any key to continue . . .
             <div class="list col-span-1 col-start-3 w-full hidden md:block">
                 <h1 class="font-light text-2xl">Related news</h1>
                 <hr class="mb-10">
-                <div class="flex justify-start items-center hidden md:flex">
+                <div class="flex flex-col  items-center hidden md:flex">
 
-                    <div class="flex flex-row rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500">
+                    <div class="flex flex-row mb-5 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500" onclick="window.open('./article-timetable.html')">
                         <div class="img-container"
-                             style="background-image: url(https://images.unsplash.com/photo-1624258919367-5dc28f5dc293?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80);"></div>
+                             style="background-image: url(../../assets/thumbnails/timetable_beta_0.1.png);"></div>
                         <div class="p-4 bg-white">
                             <div class="author text-md text-light pb-2 flex items-center">
                                 <i class="fas fa-user-edit"></i>
-                                <p class="pl-1">Author</p>
+                                <p class="pl-1">AzureAms PR Team
+                                </p>
                             </div>
-                            <h1 class="font-bold text-2xl">Title</h1>
+                            <h1 class="font-bold text-2xl">Ra mắt Timetable App Beta
+                            </h1>
                             <p class="font-light text-xl">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsa magnam odit quisquam
-                                sunt!
+                                Để giúp đơn giản hóa việc tham gia lớp học online, AzureAms đã tạo ra sản phẩm website + app Timetable...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row mb-5 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500" onclick="window.open('./article-web.html')">
+                        <div class="img-container"
+                             style="background-image: url(../../assets/thumbnails/azureams_website_0_1release.png);"></div>
+                        <div class="p-4 bg-white">
+                            <div class="author text-md text-light pb-2 flex items-center">
+                                <i class="fas fa-user-edit"></i>
+                                <p class="pl-1">AzureAms PR Team
+                                </p>
+                            </div>
+                            <h1 class="font-bold text-2xl">Ra mắt website Beta
+                            </h1>
+                            <p class="font-light text-xl">
+                                Sau hơn 1 tuần làm việc, bản beta đầu tiên của website đã hoàn thiện. Website được host bằng GitHub Pages...
                             </p>
                         </div>
                     </div>
@@ -324,21 +341,40 @@ Press any key to continue . . .
         <div class="list w-full md:hidden block px-3 py-5">
             <h1 class="font-light text-2xl">Related news</h1>
             <hr class="mb-10">
-            <div class="flex justify-start items-center md:hidden">
+            <div class="flex flex-col justify-start items-center md:hidden">
 
-                <div class="flex flex-row rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500">
+                <div class="flex flex-row mb-5 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500" onclick="window.open('./article-timetable.html')">
                     <div class="img-container"
-                         style="background-image: url(https://images.unsplash.com/photo-1624258919367-5dc28f5dc293?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80);"></div>
+                         style="background-image: url(../../assets/thumbnails/timetable_beta_0.1.png);"></div>
                     <div class="p-4 bg-white">
                         <div class="author text-md text-light pb-2 flex items-center">
                             <i class="fas fa-user-edit"></i>
-                            <p class="pl-1">Author</p>
+                            <p class="pl-1">AzureAms PR Team
+                            </p>
                         </div>
-                        <h1 class="font-bold text-2xl">Title</h1>
+                        <h1 class="font-bold text-2xl">Ra mắt Timetable App Beta
+                        </h1>
                         <p class="font-light text-xl">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsa magnam odit quisquam sunt!
+                            Để giúp đơn giản hóa việc tham gia lớp học online, AzureAms đã tạo ra sản phẩm website + app Timetable...
                         </p>
                     </div>
+                </div>
+                <div class="flex flex-row rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500" onclick="window.open('./article-web.html')">
+                    <div class="img-container"
+                         style="background-image: url(../../assets/thumbnails/azureams_website_0_1release.png);"></div>
+                    <div class="p-4 bg-white">
+                        <div class="author text-md text-light pb-2 flex items-center">
+                            <i class="fas fa-user-edit"></i>
+                            <p class="pl-1">AzureAms PR Team
+                            </p>
+                        </div>
+                        <h1 class="font-bold text-2xl">Ra mắt website Beta
+                        </h1>
+                        <p class="font-light text-xl">
+                            Sau hơn 1 tuần làm việc, bản beta đầu tiên của website đã hoàn thiện. Website được host bằng GitHub Pages...
+                        </p>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -349,7 +385,7 @@ Press any key to continue . . .
         <div class="flex flex-col md:flex-row justify-between bg-black">
             <!-- Icon -->
             <div class="order-2 my-auto hidden md:block">
-                <img alt="logo" class="w-40 mx-20" src="../assets/logo.png">
+                <img alt="logo" class="w-40 mx-20" src="../../assets/logo.png">
             </div>
             <!-- Contacts -->
             <div class="order-1 mx-auto md:mx-12 md:my-6">
@@ -382,6 +418,6 @@ Press any key to continue . . .
 
 <!-- JQuery 3.6.0 -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="../js/article.js"></script>
+<script src="../../js/article.js"></script>
 </body>
 </html>
