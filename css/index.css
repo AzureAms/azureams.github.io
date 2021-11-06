@@ -15,7 +15,7 @@ body {
 }
 
 #btn-container button {
-  background: #131F28;
+  background: #131f28;
   box-shadow: -4px 7px 7px -1px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
 }
@@ -43,11 +43,14 @@ body {
 
 .content {
   top: 2.5rem;
-  background: linear-gradient(180deg, rgba(2, 15, 24, 0.92) 0%, #020F18 100%);
+  background: linear-gradient(180deg, rgba(2, 15, 24, 0.92) 0%, #020f18 100%);
 }
 
 .skeleton {
   animation: skeleton-loading 1s linear;
 }
 
+.link-app :hover {
+  color: rgb(186, 248, 248);
+}
 /*# sourceMappingURL=index.css.map */
