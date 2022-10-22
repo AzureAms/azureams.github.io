@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Ra mắt website Beta</title>
+    <!-- Tailwind CSS -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- FontAwesome 5 -->
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/88fcee8aa9.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSSes-->
+    <link href="../../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/article.css">
+    <!--Logo-->
+    <link rel="shortcut icon" href="../../assets/favicon_io/favicon.ico">
+    <link rel="icon" href="../../assets/favicon_io/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" href="../../assets/favicon_io/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="../../assets/favicon_io/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="../../assets/favicon_io/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" href="../../assets/favicon_io/android-chrome-512x512.png" sizes="512x512">
+</head>
+<body>
+<!--Body view-->
+<div id="view" class="bg-gray-50">
+    <!--Header-->
+    <nav class="shadow-md z-10 sticky top-0 navbar nav-active bg-white">
+        <div class="max-w-6xl mx-auto flex justify-between">
+            <!-- Icon -->
+            <div>
+                <a href="../../index.html"><img src="../../assets/logo.png" alt="logo" class="w-16 my-2 mx-4"></a>
+            </div>
+            <!-- Desktop View -->
+            <div class="hidden sm:flex items-center pr-10 text-3xl font-light uppercase hrefs">
+                <!-- Ở trang nào thì mình sẽ set class active ở trang đấy -->
+                <a href="../../index.html" class="mx-6 text-center middle">Trang Chủ</a>
+                <a href="../news.html" class="mx-6 text-center middle active">News & Blogs</a>
+                <a href="../about-us.html" class="mx-6 text-center middle">Về CLB</a>
+            </div>
+            <!-- Mobile Icon -->
+            <button id="mobile-menu-button" class="sm:hidden flex items-center">
+                <i class="fas fa-bars m-2 text-3xl mr-5"></i>
+            </button>
+        </div>
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="sm:hidden flex flex-col hidden text-2xl uppercase" >
+            <a href="../../index.html" class="pl-4 py-2 w-screen">Trang Chủ</a>
+            <a href="../news.html" class="pl-4 py-2 w-screen">News & Blogs</a>
+            <a href="../about-us.html" class="pl-4 py-2 w-screen">Về CLB</a>
+        </div>
+    </nav>
+    <div>
+        <div class="bg-img-container w-full" style="background-image: url(../../assets/thumbnails/swift1.png);"></div>
+        <div class="article grid grid-cols-1 md:grid-cols-3 md:mx-14 mx-3 my-10 md:gap-10 z-10">
+            <div class="article-content col-span-2 col-start-1 w-full md:shadow px-2 md:px-14 py-5">
+                <h1 class="text-bold text-2xl mb-3 lg:text-5xl">Giới thiệu về ngôn ngữ lập trình Swift</h1>
+                <hr>
+                <div class="details md:flex justify-start mb-1 items-center">
+                    <p class="font-light sm:text-xs"><i class="far fa-clock"></i> 23/10/2022</p>
+                    <p class="font-light sm:text-xs md:ml-5"><i class="fas fa-user-edit"></i>AzureAms PR Team</p>
+                </div>
+                <h1 class="text-bold text-xl mb-3 lg:text-2xl">Swift là gì? Swift là một ngôn ngữ lập trình hướng đối tượng để phát triển các hệ điều hành của Apple như iOS, macOS,.</p></h1>
+                <p class="text-justify font-light">-Được phát triển vào năm 2014, Swift càng ngày càng được nhiều lập trình viên chọn lựa, dẫn đến cộng đồng phát triển và hỗ trợ cho ngôn ngữ này ngày càng lớn mạnh, trở thành một trong các ngôn ngữ lập trình được sử dụng rộng rãi nhất trên thế giới.</p>
+                <p class="text-justify font-light sm:text-md"> Ưu điểm của ngôn ngữ swift có thể kể đến như là :</p>
+                <p class="text-justify font-light"> - Dễ dàng phát triển các ứng dụng di động. Swift không bị lỗi có các biến không xác định, không có lỗi array-out-of-bound, không có lỗi tràn số nguyên, quản lý bộ nhớ hoàn toàn tự động.</p>
+                <p class="text-justify font-light"> - Ngôn ngữ ngắn, gọn và dễ đọc.</p>
+                <p class="text-justify font-light"> - Tốc độ thực thi nhanh.</p>
+                <p class="text-justify font-light"> - Miễn phí và là mã nguồn mở, dễ dàng vá sửa các lỗi bảo mật, tính năng, các plugin cải tiến cho ngôn ngữ.</p>
+                <p class="text-justify font-light"> - Nhu cầu tuyển dụng cao. Swift là ngôn ngữ chủ yếu để tạo nên những phần mềm thuộc hệ điều hành của Apple, vì vậy trong tương lai Swift có thể là một ngôn ngữ mạnh mẽ, là con cưng của ông lớn này.</p>
+                <p class="text-justify font-light sm:text-md"> Bên cạnh những ưu điểm, Swift cũng tồn tại một số điểm yếu như sau: </p>
+                <p class="text-justify font-light"> - Khó tiếp cận: Tuổi đời còn quá trẻ khiến việc bắt đầu học Swift khá khó khăn, bởi các nhà lập trình sẽ phải học lại một ngôn ngữ hoàn toàn mới, thậm chí khó cho những người mới bắt đầu.</p>
+                <p class="text-justify font-light"> - Không có các cộng đồng hỗ trợ và phát triển ứng dụng mạnh như nhiều ngôn ngữ khác.</p>
+                <p class="text-justify font-light sm:text-md">Mặc dù còn tồn tại những mặt khuyết điểm, nhưng với đà phát triển mạnh mẽ của mình, Swift vẫn là một ngôn ngữ đáng để các bạn đầu tư và học tập.</p>
+                <br>
+                <br>
+                <p class="text-justify font-light"> _kiroz06</p>
+                <p class="text-justify font-light sm:text-md mt-3"><i>Các bạn hãy theo dõi loạt blog của chúng mình, cũng như
+                    Fanpage và trang web của AzureAms để nhận thêm nhiều thông tin hữu ích như này nhé. Xin cảm ơn!</i>
+            </div>
+            <div class="flex flex-col  items-center hidden md:flex">
+
+                <div class="flex flex-row mb-5 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500" onclick="window.location.href='./article-timetable.html'">
+                    <div class="img-container"
+                         style="background-image: url(../../assets/thumbnails/timetable_beta_0.1.png);"></div>
+                    <div class="p-4 bg-white">
+                        <div class="author text-md text-light pb-2 flex items-center">
+                            <i class="fas fa-user-edit"></i>
+                            <p class="pl-1">AzureAms PR Team
+                            </p>
+                        </div>
+                        <h1 class="font-bold text-2xl">Ra mắt Timetable App Beta
+                        </h1>
+                        <p class="font-light text-xl">
+                            Để giúp đơn giản hóa việc tham gia lớp học online, AzureAms đã tạo ra sản phẩm website + app Timetable...
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-row mb-5 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500" onclick="window.location.href='./tips-cpp-trong-phong-thi.html'">
+                    <div class="img-container"
+                         style="background-image: url(../../assets/thumbnails/meo_cpp_trong_phong_thi.jpg);"></div>
+                    <div class="p-4 bg-white">
+                        <div class="author text-md text-light pb-2 flex items-center">
+                            <i class="fas fa-user-edit"></i>
+                            <p class="pl-1">AzureAms PR Team
+                            </p>
+                        </div>
+                        <h1 class="font-bold text-2xl">Một số mẹo C++ trong phòng thi
+                        </h1>
+                        <p class="font-light text-xl">
+                            Có lẽ, không có kỳ thi nào đòi hỏi kỹ năng thi cao hơn các kỳ thi học sinh giỏi môn Tin học. Đã có rất nhiều thí sinh...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+<div class="list w-full md:hidden block px-3 py-5">
+    <h1 class="font-light text-2xl">Related news</h1>
+    <hr class="mb-10">
+    <div class="flex flex-col justify-start items-center md:hidden">
+
+        <div class="flex flex-row mb-5 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500" onclick="window.location.href='./article-timetable.html'">
+            <div class="img-container"
+                 style="background-image: url(../../assets/thumbnails/timetable_beta_0.1.png);"></div>
+            <div class="p-4 bg-white">
+                <div class="author text-md text-light pb-2 flex items-center">
+                    <i class="fas fa-user-edit"></i>
+                    <p class="pl-1">AzureAms PR Team
+                    </p>
+                </div>
+                <h1 class="font-bold text-2xl">Ra mắt Timetable App Beta
+                </h1>
+                <p class="font-light text-xl">
+                    Để giúp đơn giản hóa việc tham gia lớp học online, AzureAms đã tạo ra sản phẩm website + app Timetable...
+                </p>
+            </div>
+        </div>
+        <div class="flex flex-row rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500" onclick="window.location.href='./tips-cpp-trong-phong-thi.html'">
+            <div class="img-container"
+                 style="background-image: url(../../assets/thumbnails/meo_cpp_trong_phong_thi.jpg);"></div>
+            <div class="p-4 bg-white">
+                <div class="author text-md text-light pb-2 flex items-center">
+                    <i class="fas fa-user-edit"></i>
+                    <p class="pl-1">AzureAms PR Team
+                    </p>
+                </div>
+                <h1 class="font-bold text-2xl">Một số mẹo C++ trong phòng thi
+                </h1>
+                <p class="font-light text-xl">
+                    Có lẽ, không có kỳ thi nào đòi hỏi kỹ năng thi cao hơn các kỳ thi học sinh giỏi môn Tin học. Đã có rất nhiều thí sinh...
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+    </div>
+
+
+    <footer>
+        <div class="flex flex-col md:flex-row justify-between bg-black">
+            <!-- Icon -->
+            <div class="order-2 my-auto hidden md:block">
+                <img src="../../assets/logo.png" alt="logo" class="w-40 mx-20">
+            </div>
+            <!-- Contacts -->
+            <div class="order-1 mx-auto md:mx-12 md:my-6">
+                <p class="text-gray-300 font-light text-center text-lg md:text-2xl mt-4 md:mt-0">Liên hệ</p>
+                <div class="flex flex-col m-2">
+                    <div class="flex my-2">
+                        <i class="fas fa-phone-alt text-gray-300 text-lg md:text-xl"></i>
+                        <p class="text-gray-300 mx-4 font-light text-xs md:text-base mt-1 md:mt-0">(+84) 975 277 777</p>
+                    </div>
+                    <div class="flex my-2">
+                        <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=azureamsprogrammingclub@gmail.com"><i class="far fa-envelope text-gray-300 text-lg md:text-xl"></i></a>
+                        <p class="text-gray-300 mx-4 font-light text-xs md:text-base mt-1 md:mt-0">azureamsprogrammingclub@gmail.com</p>
+                    </div>
+
+                    <div class="flex my-2">
+                        <a href="https://www.facebook.com/azureamsprogramming"><i class="fab fa-facebook text-gray-300 text-lg md:text-xl"></i></a>
+                        <a href="https://www.facebook.com/azureamsprogramming"><p class="text-gray-300 mx-4 font-light hover:text-white text-xs md:text-base mt-1 md:mt-0">https://www.facebook.com/azureamsprogramming</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<!-- JQuery 3.6.0 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="../../js/article.js"></script>
+</body>
+</html>
