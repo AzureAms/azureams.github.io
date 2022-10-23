@@ -38,9 +38,10 @@
 <!--Body view-->
 <script>
     function changeToDark(){
-        document.getElementById("indexLight").href="css/indexdm.css"
+        document.getElementById("indexLight").href="css/indexdm.css";
         document.getElementById("coreLight").className="flex py-5 lg:px-20 md:px-10 px-5 lg:mx-40 md:mx-20 mx-5 font-bold text-4xl text-gray-300 justify-center uppercase";
         document.getElementById("bvgdLight").className="text-4xl text-black font-bold uppercase text-center text-gray-300";
+        document.getElementById("indexLight").id="indexDark";
         for (let i = 0; i < 3; i++) {
             document.getElementById("capLight").className+=" text-gray-300";
             document.getElementById("capLight").id="capDark";
