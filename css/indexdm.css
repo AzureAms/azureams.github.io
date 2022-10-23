@@ -1,5 +1,5 @@
 body {
-  background-color: #f3f3f3;
+  background-color: #303436;
 }
 
 #bg-cover {
@@ -15,7 +15,7 @@ body {
 }
 
 #btn-container button {
-  background: #131F28;
+  background: #fff;
   -webkit-box-shadow: -4px 7px 7px -1px rgba(0, 0, 0, 0.25);
           box-shadow: -4px 7px 7px -1px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
@@ -63,9 +63,8 @@ body {
 }
 /*# sourceMappingURL=index.css.map */
 
-#changeButton {
+.changeButton {
   position:fixed;
   right:50px;
   bottom:50px;
-
 }
