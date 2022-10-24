@@ -63,8 +63,9 @@ body {
 }
 /*# sourceMappingURL=index.css.map */
 
-.changeButton {
+#changeButton {
   position:fixed;
   right:50px;
   bottom:50px;
+  z-index:10;
 }
