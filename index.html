@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
     <meta charset="UTF-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -36,22 +36,7 @@
 </head>
 <body>
 <!--Body view-->
-<script>
-    function changeToDark(){
-        document.getElementById("indexLight").href="css/indexdm.css";
-        document.getElementById("indexLight").id = "indexDark";
-    }
-    function changeToLight(){
-        document.getElementById("indexDark").href="css/index.css";
-        document.getElementById("indexDark").id="indexLight";
-    }
-    function changeTheme(){
-        if (document.getElementById("indexDark")==null){
-            return changeToDark()
-        }
-        return changeToLight()
-    }
-</script>
+
 <div id="view bg-gray-50">
     <!--Header-->
     <nav class="shadow-md z-10 sticky top-0 navbar nav-active bg-white">
@@ -358,6 +343,38 @@
 <!-- JQuery 3.6.0 -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="./js/app.js"></script>
-<button id="changeButton" onclick="changeTheme()"><img src="/assets/sunmoon.png"></button>
+<script>
+    function changeToDark(){
+        document.getElementById("indexLight").href="css/indexdm.css";
+        document.getElementById("indexLight").id = "indexDark";
+        document.getElementById("Sun").src='assets/Moon.png';
+        document.getElementById("Sun").id="Moon";
+    }
+    function changeToLight(){
+        document.getElementById("indexDark").href="css/index.css";
+        document.getElementById("indexDark").id="indexLight";
+        document.getElementById("Moon").src='assets/Sun.png';
+        document.getElementById("Moon").id="Sun";
+
+    }
+    function changeTheme(){
+        if (document.getElementById("indexDark")==null){
+            return changeToDark()
+        }
+        return changeToLight()
+    }
+</script>
+<label class="" id="checkbox">
+    <input class='scaled toggle-checkbox' type='checkbox' onclick="changeTheme()"></input>
+    <div class='scaled toggle-slot'>
+      <div class=' sun-icon-wrapper'>
+        <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></div>
+      </div>
+      <div class='toggle-button'></div>
+      <div class='moon-icon-wrapper'>
+        <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"></div>
+      </div>
+    </div>
+  </label>
 </body>
 </html>
