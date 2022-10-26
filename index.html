@@ -39,51 +39,12 @@
 <script>
     function changeToDark(){
         document.getElementById("indexLight").href="css/indexdm.css";
-        document.getElementById("coreLight").className="flex py-5 lg:px-20 md:px-10 px-5 lg:mx-40 md:mx-20 mx-5 font-bold text-4xl text-gray-300 justify-center uppercase";
-        document.getElementById("bvgdLight").className="text-4xl text-black font-bold uppercase text-center text-gray-300";
-        document.getElementById("indexLight").id="indexDark";
-        document.getElementById("bvgdLight").id="bvgdDark";
-        document.getElementById("coreLight").id="coreDark";
-        for (let i = 0; i < 3; i++) {
-            document.getElementById("capLight").className+=" text-gray-300";
-            document.getElementById("capLight").id="capDark";
-            document.getElementById("authorLight").className+=" text-gray-300";
-            document.getElementById("authorLight").id="authorDark";
-            document.getElementById("bgArticleBotLight").className="p-4 bg-gray-700";
-            document.getElementById("bgArticleBotLight").id="bgArticleBotDark";
-            document.getElementById("bgArticleTopLight").className="w-11/12 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500 bg-gray-700";
-            document.getElementById("bgArticleTopLight").id="bgArticleTopDark";
-            document.getElementById("indexLight").className+=" text-gray-300";
-            document.getElementById("indexLight").id="indexDark";
-
-            }
-
-        document.getElementById("read-more-button hover:shadow-xl Light").className="bg-blue-500 hover:bg-blue-700 text-gray-400 font-bold py-2 px-4 mt-4 ";
-        document.getElementById("read-more-button hover:shadow-xl Light").id="read-more-button hover:shadow-xl Dark";
-        }
+        document.getElementById("indexLight").id = "indexDark";
+    }
     function changeToLight(){
         document.getElementById("indexDark").href="css/index.css";
-        document.getElementById("coreDark").className="flex py-5 lg:px-20 md:px-10 px-5 lg:mx-40 md:mx-20 mx-5 font-bold text-4xl text-gray-800 justify-center uppercase";
-        document.getElementById("bvgdDark").className="text-4xl text-black font-bold uppercase text-center text-gray-800";
         document.getElementById("indexDark").id="indexLight";
-        document.getElementById("bvgdDark").id="bvgdLight";
-        document.getElementById("coreDark").id="coreLight";
-        for (let i = 0; i < 3; i++) {
-            document.getElementById("capDark").className-=" text-gray-300";
-            document.getElementById("capDark").id="capLight";
-            document.getElementById("authorDark").className-=" text-gray-300";
-            document.getElementById("authorDark").id="authorLight";
-            document.getElementById("bgArticleBotDark").className="p-4 bg-white";
-            document.getElementById("bgArticleBotDark").id="bgArticleBotLight";
-            document.getElementById("bgArticleTopDark").className="w-11/12 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500 bg-white";
-            document.getElementById("bgArticleTopDark").id="bgArticleTopLight";
-            document.getElementById("indexDark").className-=" text-gray-800";
-            document.getElementById("indexDark").id="indexLight";
-
-            }
-        document.getElementById("read-more-button hover:shadow-xl Dark").className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 ";
-        document.getElementById("read-more-button hover:shadow-xl Dark").id="read-more-button hover:shadow-xl Light";
-        }
+    }
     function changeTheme(){
         if (document.getElementById("indexDark")==null){
             return changeToDark()
@@ -148,68 +109,68 @@
     </div>
     <!--Recent news section-->
     <div class="recent-news justify-center pt-4 m-10 ">
-        <h1 id="bvgdLight" class="text-4xl text-black font-bold uppercase text-center text-gray-800">
+        <h1 id="bvgd" class="text-4xl text-black font-bold uppercase text-center text-gray-800">
             Bài viết gần đây
         </h1>
         <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 grid-rows-1 pt-10" id="news-container">
-            <div class="flex justify-center items-stretch">
+            <div class="Article flex justify-center items-stretch">
 
-                <div id="bgArticleTopLight" class="w-11/12 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500 bg-white" onclick="window.location.href='./html/articles/gioi-thieu-ve-swift.html'">
+                <div class="w-11/12 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500" onclick="window.location.href='./html/articles/gioi-thieu-ve-swift.html'">
                     <img alt="" src="assets/thumbnails/swift2.jpg"/>
-                    <div id="bgArticleBotLight" class="p-4 bg-white">
+                    <div class="p-4">
                         <div class="author text-md text-light pb-2 flex justify-between">
                             <div class="flex align-center">
                                 <i class="fas fa-user-edit mt-1"></i>
-                                <p id="authorLight" class="pl-1">AzureAms PR team</p>
+                                <p class="pl-1">AzureAms PR team</p>
                             </div>
                             <div>
                                 <p class="px-2 text-white rounded article-category bg-green-600">Blog</p>
                             </div>
                         </div>
-                        <h1 id="capLight" class="font-bold text-2xl">Giới thiệu về ngôn ngữ lập trình Swift</h1>
-                        <p id="indexLight" class="font-light text-xl">
+                        <h1 class="font-bold text-2xl">Giới thiệu về ngôn ngữ lập trình Swift</h1>
+                        <p class="font-light text-xl">
                             Swift là gì? Swift là một ngôn ngữ lập trình hướng đối tượng để phát triển các hệ điều hành của Apple như iOS, macOS,.
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="flex justify-center items-stretch hidden md:flex">
+            <div class="Article flex justify-center items-stretch hidden md:flex">
 
-                <div id="bgArticleTopLight" class="w-11/12 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500 bg-white" onclick="window.location.href='./html/articles/gioi-thieu-ve-swift.html'">
+                <div class="w-11/12 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500" onclick="window.location.href='./html/articles/gioi-thieu-ve-swift.html'">
                     <img alt="" src="assets/thumbnails/timetable_beta_0.1.png"/>
-                    <div id="bgArticleBotLight" class="p-4 bg-white">
-                        <div class="author text-md text-light pb-2 flex justify-between">
+                    <div class="p-4 ">
+                        <div class="author text-md pb-2 flex justify-between">
                             <div class="flex align-center">
                                 <i class="fas fa-user-edit mt-1"></i>
-                                <p id="authorLight" class="pl-1">AzureAms PR team</p>
+                                <p class="pl-1">AzureAms PR team</p>
                             </div>
                             <div>
                                 <p class="px-2 text-white rounded article-category bg-red-600">Releases</p>
                             </div>
                         </div>
-                        <h1 id="capLight" class="font-bold text-2xl">Ra mắt Timetable App Beta</h1>
-                        <p id="indexLight" class="font-light text-xl">
+                        <h1 class="font-bold text-2xl">Ra mắt Timetable App Beta</h1>
+                        <p class="font-light text-xl">
                             Để giúp đơn giản hóa việc tham gia lớp học online, AzureAms đã tạo ra sản phẩm website + app Timetable...
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="flex justify-center  items-stretch hidden lg:flex" onClick="window.location.href='./html/articles/tips-cpp-trong-phong-thi.html';">
+            <div class="Article flex justify-center  items-stretch hidden lg:flex" onClick="window.location.href='./html/articles/tips-cpp-trong-phong-thi.html';">
 
-                <div id="bgArticleTopLight" class="w-11/12 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500 bg-white" onclick="window.location.href='./html/articles/gioi-thieu-ve-swift.html'">
+                <div class="w-11/12 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500" onclick="window.location.href='./html/articles/gioi-thieu-ve-swift.html'">
                     <img alt="" src="assets/thumbnails/meo_cpp_trong_phong_thi.jpg"/>
-                    <div id="bgArticleBotLight" class="p-4 bg-white">
-                        <div class="author text-md text-light pb-2 flex justify-between">
+                    <div class="p-4">
+                        <div class="author text-md pb-2 flex justify-between">
                             <div class="flex align-center">
                                 <i class="fas fa-user-edit mt-1"></i>
-                                <p id="authorLight" class="pl-1">AzureAms PR team</p>
+                                <p class="pl-1">AzureAms PR team</p>
                             </div>
                             <div>
                                 <p class="px-2 text-white rounded article-category bg-green-600">Blog</p>
                             </div>
                         </div>
-                        <h1 id="capLight" class="font-bold text-2xl">Một số mẹo C++ trong phòng thi</h1>
-                        <p id="indexLight" class="font-light text-xl">
+                        <h1 class="font-bold text-2xl">Một số mẹo C++ trong phòng thi</h1>
+                        <p class="font-light text-xl">
                             Có lẽ, không có kỳ thi nào đòi hỏi kỹ năng thi cao hơn các kỳ thi học sinh giỏi môn Tin học. Đã có rất nhiều thí sinh...
                         </p>
                     </div>
@@ -217,7 +178,7 @@
             </div>
         </div>
         <div class="flex justify-end " id="btn-container" id="read-more-btn">
-            <button id="read-more-button hover:shadow-xl Light" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 " onClick="window.location.href='./html/news.html';">
+            <button id="read-more-button hover:shadow-xl" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 " onClick="window.location.href='./html/news.html';">
                 Đọc thêm <i class="fas fa-angle-right pl-1"></i>
             </button>
         </div>
@@ -225,7 +186,7 @@
     <!--Core team section-->
     <div class="flex flex-col m-auto p-auto">
         <!--Title-->
-        <h1 id="coreLight" class="flex py-5 lg:px-20 md:px-10 px-5 lg:mx-40 md:mx-20 mx-5 font-bold text-4xl text-gray-800 justify-center uppercase">
+        <h1 id="core" class="flex py-5 lg:px-20 md:px-10 px-5 lg:mx-40 md:mx-20 mx-5 font-bold text-4xl text-gray-800 justify-center uppercase">
             Core Team
         </h1>
         <!--Core Information Cards-->
@@ -397,10 +358,6 @@
 <!-- JQuery 3.6.0 -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="./js/app.js"></script>
-<div class="flex justify-end " id="changeButton">
-    <button id="changeButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 " onClick=changeTheme()>
-        Đổi màu
-    </button>
-</div>
+<button id="changeButton" onclick="changeTheme()"><img src="/assets/sunmoon.png"></button>
 </body>
 </html>

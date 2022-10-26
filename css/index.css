@@ -65,7 +65,23 @@ body {
 
 #changeButton {
   position:fixed;
-  right:50px;
-  bottom:50px;
+  right:30px;
+  top:20px;
   z-index:10;
+  height: 100px;  
+  width: 70px;
 }
+
+#core {
+  color :black
+}
+
+#bvgd {
+  color: black
+}
+
+.Article {
+  background: white;
+  color: black;
+}
+
