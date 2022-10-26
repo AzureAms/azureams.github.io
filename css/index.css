@@ -176,6 +176,6 @@ body {
 
 .scaled {
   transform: scale(0.4);
-  top:0px;
+  
   right:0px;
 }

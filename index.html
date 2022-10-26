@@ -63,6 +63,18 @@
             <a href="./html/news.html" class="pl-4 py-2 w-screen">Tin tức & Blogs</a>
             <a href="html/article-page.html" class="pl-4 py-2 w-screen">Về CLB</a>
         </div>
+        <label class="scaled" id="checkbox">
+            <input class='scaled toggle-checkbox' type='checkbox' onclick="changeTheme()"></input>
+            <div class='scaled toggle-slot'>
+              <div class=' sun-icon-wrapper'>
+                <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></div>
+              </div>
+              <div class='toggle-button'></div>
+              <div class='moon-icon-wrapper'>
+                <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"></div>
+              </div>
+            </div>
+          </label>
     </nav>
     <!--Overview of the club-->
     <div class="bg-cover bg-center bg-no-repeat grid grid-col-1 grid-rows-1 justify-center" id="landing-section">
@@ -79,7 +91,7 @@
                 </h1>
                 <p class="text-white lg:text-2xl text-md text-center lg:text-left"> Câu lạc bộ chuyên sâu lập trình đầu tiên và duy nhất tại trường THPT Chuyên Hà Nội - Amsterdam</p>
                 <div class="text-2xl lg:text-3xl text-white pb-3 font-bold text-center pt-9 hover:shadow-xl link-app lg:text-left">
-                    <button id="join-now-btn" class="hover:shadow-xl text-white font-bold py-2 px-4 mt-4 " onClick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdgzfPdpspHJFFxJVpvpxIhfMhValBUhz3lQIo7IeJqF4ybaQ/viewform', '_blank');" >
+                    <button id="join-now-btn" class="hover:shadow-xl text-white font-bold py-2 px-4 mt-4 " onClick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScQl9AIvzBtCJYJbSorvcS9rFWTI82yJK37ga_T-0zEBKxpRw/viewform?fbclid=IwAR3H91LsjCJlNxSoVNXmKZy2AsIXj_ITDRqKRrky9JhdqOOtKiLQLXcDJ6k', '_blank');" >
                         Tham gia ngay! <i class="fas fa-angle-right pl-1"></i>
                     </button>
                 </div>           
@@ -364,17 +376,6 @@
         return changeToLight()
     }
 </script>
-<label class="" id="checkbox">
-    <input class='scaled toggle-checkbox' type='checkbox' onclick="changeTheme()"></input>
-    <div class='scaled toggle-slot'>
-      <div class=' sun-icon-wrapper'>
-        <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></div>
-      </div>
-      <div class='toggle-button'></div>
-      <div class='moon-icon-wrapper'>
-        <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"></div>
-      </div>
-    </div>
-  </label>
+
 </body>
 </html>
