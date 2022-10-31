@@ -63,18 +63,7 @@
             <a href="./html/news.html" class="pl-4 py-2 w-screen">Tin tức & Blogs</a>
             <a href="html/article-page.html" class="pl-4 py-2 w-screen">Về CLB</a>
         </div>
-        <label class="scaled" id="checkbox">
-            <input class='scaled toggle-checkbox' type='checkbox' onclick="changeTheme()"></input>
-            <div class='scaled toggle-slot'>
-              <div class=' sun-icon-wrapper'>
-                <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></div>
-              </div>
-              <div class='toggle-button'></div>
-              <div class='moon-icon-wrapper'>
-                <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"></div>
-              </div>
-            </div>
-          </label>
+
     </nav>
     <!--Overview of the club-->
     <div class="bg-cover bg-center bg-no-repeat grid grid-col-1 grid-rows-1 justify-center" id="landing-section">
@@ -376,6 +365,6 @@
         return changeToLight()
     }
 </script>
-
+<button id="changeButton" onclick="changeTheme()"><img src="/assets/button.png"></button>
 </body>
 </html>
