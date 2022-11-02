@@ -57,18 +57,7 @@
                 <i class="fas fa-bars m-2 text-3xl mr-5"></i>
             </button>
             <!-- Dark - Light switch -->
-            <div class="toggle-container self-center text-3xl">
-                <input class='toggle-checkbox' type='checkbox' onclick="changeTheme()"></input>
-                <div class='toggle-slot'>
-                    <div class='sun-icon-wrapper'>
-                        <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></div>
-                    </div>
-                    <div class='toggle-button'></div>
-                    <div class='moon-icon-wrapper'>
-                        <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"></div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
         <!-- Mobile Dropdown -->
         <div id="mobile-menu" class="sm:hidden flex flex-col hidden text-2xl uppercase" >
@@ -372,6 +361,6 @@
         return changeToLight()
     }
 </script>
-
+<button id="changeButton" onclick="changeTheme()"><img src="/assets/button.png"></button>
 </body>
 </html>
