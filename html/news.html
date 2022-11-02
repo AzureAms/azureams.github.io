@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- Custom CSSes-->
     <link href="../css/style.css" rel="stylesheet">
-    <link href="../css/index.css" rel="stylesheet">
+    <link id="indexLight" href="../css/index.css" rel="stylesheet">
     <!--Logo-->
     <link rel="shortcut icon" href="../assets/favicon_io/favicon.ico">
     <link rel="icon" href="../assets/favicon_io/favicon-16x16.png" sizes="16x16">
@@ -49,19 +49,19 @@
             <a href="../html/news.html" class="pl-4 py-2 w-screen">News & Blogs</a>
             <a href="../html/about-us.html" class="pl-4 py-2 w-screen">Về CLB</a>
         </div>
+        <div id="changeButton"></div>
     </nav>
 
     <!-- Page title -->
     <section>
-        <h1 class="text-3xl md:text-5xl font-light py-4 text-center md:text-left md:mx-24 lg:mx-36">AzureAms News & Blogs</h1>
-        <hr class="text-black">
+        <h1 class="words text-3xl md:text-5xl font-light py-4 text-center md:text-left md:mx-24 lg:mx-36">AzureAms News & Blogs</h1>
     </section>
 
     <section>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-4 md:my-8 mx-12 md:mx-24 lg:mx-36">
             <div class="rounded-lg cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500 lg:col-span-2 lg:row-span-2" onclick="window.location.href='./articles/gioi-thieu-ve-website.html'">
                 <img alt="" src="../assets/thumbnails/azureams_website_0_1release.png" class="w-full overflow-hidden"/>
-                <div class="h-full p-4 bg-white">
+                <div class="Article h-full p-4 bg-white">
                     <div class="author text-md text-light pb-2 flex justify-between">
                         <div class="flex align-center">
                             <i class="fas fa-user-edit mt-1"></i>
@@ -79,7 +79,7 @@
             </div>
             <div class="rounded-lg cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500" onclick="window.location.href='./articles/article-timetable.html'">
                 <img alt="" src="../assets/thumbnails/timetable_beta_0.1.png" class="w-full overflow-hidden"/>
-                <div class="h-full p-4 bg-white">
+                <div class="Article h-full p-4 bg-white">
                     <div class="author text-md text-light pb-2 flex justify-between">
                         <div class="flex align-center">
                             <i class="fas fa-user-edit mt-1"></i>
@@ -97,7 +97,7 @@
             </div>
             <div class="rounded-lg cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500" onclick="window.location.href='./articles/tips-cpp-trong-phong-thi.html'">
                 <img alt="" src="../assets/thumbnails/meo_cpp_trong_phong_thi.jpg" class="w-full overflow-hidden"/>
-                <div class="h-full p-4 bg-white">
+                <div class="Article h-full p-4 bg-white">
                     <div class="author text-md text-light pb-2 flex justify-between">
                         <div class="flex align-center">
                             <i class="fas fa-user-edit mt-1"></i>
@@ -115,7 +115,7 @@
             </div>
             <div class="rounded-lg cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500" onclick="window.location.href='./articles/gioi-thieu-ve-swift.html'">
                 <img alt="" src="../assets/thumbnails/swift2.jpg" class="w-full overflow-hidden"/>
-                <div class="h-full p-4 bg-white">
+                <div class="Article h-full p-4 bg-white">
                     <div class="author text-md text-light pb-2 flex justify-between">
                         <div class="flex align-center">
                             <i class="fas fa-user-edit mt-1"></i>
@@ -133,7 +133,7 @@
             </div>
             <div class="rounded-lg cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500">
                 <img alt="" src="../assets/coming_soon.png" class="w-full overflow-hidden"/>
-                <div class="h-full p-4 bg-white">
+                <div class="Article h-full p-4 bg-white">
                     <div class="author text-md text-light pb-2 flex justify-between">
                         <div class="flex align-center">
                             <i class="fas fa-user-edit mt-1"></i>

@@ -63,6 +63,7 @@ body {
 }
 /*# sourceMappingURL=index.css.map */
 
+/*# changes in Darkmode */
 #changeButton {
   position:fixed;
   right:30px;
@@ -71,15 +72,10 @@ body {
   height: 90px;  
   width: 65px;
 }
-
-#core {
-  color :darkgrey
+.words {
+  color: darkgray /*# bài viết gần đây, core team, page title..*/
 }
-
-#bvgd {
-  color: darkgray
-}
-
 .Article {
-  color: darkgray
+  color: darkgray;
+  background: #353044;
 }

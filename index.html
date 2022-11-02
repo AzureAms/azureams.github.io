@@ -65,6 +65,7 @@
             <a href="./html/news.html" class="pl-4 py-2 w-screen">Tin tức & Blogs</a>
             <a href="html/article-page.html" class="pl-4 py-2 w-screen">Về CLB</a>
         </div>
+        <div id="changeButton"></div>
     </nav>
     <!--Overview of the club-->
     <div class="bg-cover bg-center bg-no-repeat grid grid-col-1 grid-rows-1 justify-center" id="landing-section">
@@ -96,13 +97,13 @@
     </div>
     <!--Recent news section-->
     <div class="recent-news justify-center pt-4 m-10 ">
-        <h1 id="bvgd" class="text-4xl text-black font-bold uppercase text-center text-gray-800">
+        <h1 class="words text-4xl text-black font-bold uppercase text-center text-gray-800">
             Bài viết gần đây
         </h1>
         <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 grid-rows-1 pt-10" id="news-container">
-            <div class="Article flex justify-center items-stretch">
+            <div class=" flex justify-center items-stretch">
 
-                <div class="w-11/12 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500" onclick="window.location.href='./html/articles/gioi-thieu-ve-swift.html'">
+                <div class="Article w-11/12 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500" onclick="window.location.href='./html/articles/gioi-thieu-ve-swift.html'">
                     <img alt="" src="assets/thumbnails/swift2.jpg"/>
                     <div class="p-4">
                         <div class="author text-md text-light pb-2 flex justify-between">
@@ -121,9 +122,9 @@
                     </div>
                 </div>
             </div>
-            <div class="Article flex justify-center items-stretch hidden md:flex">
+            <div class=" flex justify-center items-stretch hidden md:flex">
 
-                <div class="w-11/12 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500" onclick="window.location.href='./html/articles/gioi-thieu-ve-swift.html'">
+                <div class="Article w-11/12 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500" onclick="window.location.href='./html/articles/gioi-thieu-ve-swift.html'">
                     <img alt="" src="assets/thumbnails/timetable_beta_0.1.png"/>
                     <div class="p-4 ">
                         <div class="author text-md pb-2 flex justify-between">
@@ -142,9 +143,9 @@
                     </div>
                 </div>
             </div>
-            <div class="Article flex justify-center  items-stretch hidden lg:flex" onClick="window.location.href='./html/articles/tips-cpp-trong-phong-thi.html';">
+            <div class=" flex justify-center  items-stretch hidden lg:flex" onClick="window.location.href='./html/articles/tips-cpp-trong-phong-thi.html';">
 
-                <div class="w-11/12 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500" onclick="window.location.href='./html/articles/gioi-thieu-ve-swift.html'">
+                <div class="Article w-11/12 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500" onclick="window.location.href='./html/articles/gioi-thieu-ve-swift.html'">
                     <img alt="" src="assets/thumbnails/meo_cpp_trong_phong_thi.jpg"/>
                     <div class="p-4">
                         <div class="author text-md pb-2 flex justify-between">
@@ -173,7 +174,7 @@
     <!--Core team section-->
     <div class="flex flex-col m-auto p-auto">
         <!--Title-->
-        <h1 id="core" class="flex py-5 lg:px-20 md:px-10 px-5 lg:mx-40 md:mx-20 mx-5 font-bold text-4xl text-gray-800 justify-center uppercase">
+        <h1 class="words flex py-5 lg:px-20 md:px-10 px-5 lg:mx-40 md:mx-20 mx-5 font-bold text-4xl text-gray-800 justify-center uppercase">
             Core Team
         </h1>
         <!--Core Information Cards-->
@@ -345,22 +346,6 @@
 <!-- JQuery 3.6.0 -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="./js/app.js"></script>
-<script>
-    function changeToDark(){
-        document.getElementById("indexLight").href="css/indexdm.css";
-        document.getElementById("indexLight").id = "indexDark";
-    }
-    function changeToLight(){
-        document.getElementById("indexDark").href="css/index.css";
-        document.getElementById("indexDark").id="indexLight";
-    }
-    function changeTheme(){
-        if (document.getElementById("indexDark")==null){
-            return changeToDark()
-        }
-        return changeToLight()
-    }
-</script>
-<button id="changeButton" onclick="changeTheme()"><img src="/assets/button.png"></button>
+
 </body>
 </html>

@@ -3,4 +3,5 @@ $(document).ready(function(){
 		$("#mobile-menu").slideToggle()
 		$("#mobile-menu").css("display","flex")
 	})
+	$("#changeButton").load("../html/DarkLightButton.html"); 
 })
