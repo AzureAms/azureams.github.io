@@ -55,7 +55,7 @@ ROOT_URLCONF = 'AzureAms.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["AzureAms/templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

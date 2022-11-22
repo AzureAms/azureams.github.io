@@ -8,13 +8,13 @@ def index(request):
     myarticles = Article.objects.all().values()
     #update ID
     prev = 0
-    for member in Article.objects.all():
-        if member.id != prev+1:
-            temp = member.id
-            member.id = prev+1
+    for article in Article.objects.all():
+        if article.id != prev+1:
+            temp = article.id
+            article.id = prev+1
             Article.objects.get(id=temp).delete()
         prev += 1
-        member.save()
+        article.save()
     #update ID complete
     template = loader.get_template('index.html')
     context = {
@@ -29,13 +29,16 @@ def add(request):
 def addrecord(request):
     x = request.POST['title']
     y = request.POST['content']
-    member = Article(title=x, content=y)
-    member.save()
+    article = Article(title=x, content=y)
+    article.tomtat = request.POST['tomtat']
+    article.type = request.POST['type']
+    article.save()
+    article.save()
     return HttpResponseRedirect(reverse('index'))
 
 def delete(request, id):
-    member = Article.objects.get(id=id)
-    member.delete()
+    article = Article.objects.get(id=id)
+    article.delete()
     return HttpResponseRedirect(reverse('index'))
 
 def update(request, id):
@@ -47,12 +50,12 @@ def update(request, id):
     return HttpResponse(template.render(context, request))
 
 def updaterecord(request, id):
-    title = request.POST['title']
-    content = request.POST['content']
-    idToChange = request.POST['id']
-    member = Article.objects.get(id=id)
-    member.title = title
-    member.content = content
-    member.id = idToChange
-    member.save()
+    article = Article.objects.get(id=id)
+    article.title = request.POST['title']
+    article.content = request.POST['content']
+    article.id = request.POST['id']
+    article.tomtat = request.POST['tomtat']
+    article.type = request.POST['type']
+    article.save()
     return HttpResponseRedirect(reverse('index'))
+
