@@ -2,11 +2,11 @@
 
 <form action="updaterecord/{{ myarticle.id }}" method="post">
 {% csrf_token %}
-First Name:<br>
+title<br>
 <input name="title" value="{{ myarticle.title }}">
 <br><br>
-content Name:<br>
-<input name="content" value="{{ myarticle.content }}">
+content<br>
+<textarea style="height:400px;width:600px;font-size:14pt;">{{ myarticle.content }}</textarea>
 <br><br>
 ID:<br>
 <input name="id" value="{{ myarticle.id }}">

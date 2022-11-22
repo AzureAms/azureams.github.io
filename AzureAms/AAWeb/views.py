@@ -52,7 +52,7 @@ def updaterecord(request, id):
     idToChange = request.POST['id']
     member = Article.objects.get(id=id)
     member.title = title
-    member.contentname = content
+    member.content = content
     member.id = idToChange
     member.save()
     return HttpResponseRedirect(reverse('index'))
