@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'AAWeb.apps.AawebConfig',
+    'article_template.apps.article_templateConfig',
 ]
 
 MIDDLEWARE = [

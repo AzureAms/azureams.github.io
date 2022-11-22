@@ -3,10 +3,10 @@
 <form action="updaterecord/{{ myarticle.id }}" method="post">
 {% csrf_token %}
 title<br>
-<input name="title" value="{{ myarticle.title }}">
+<input name="title" style="width:600px" value="{{ myarticle.title }}">
 <br><br>
 content<br>
-<textarea style="height:400px;width:600px;font-size:14pt;">{{ myarticle.content }}</textarea>
+<textarea style="height:400px;width:600px;font-size:10pt;" name="content">{{ myarticle.content }}</textarea>
 <br><br>
 ID:<br>
 <input name="id" value="{{ myarticle.id }}">
