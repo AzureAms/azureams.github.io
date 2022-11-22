@@ -1,0 +1,17 @@
+<h1>Article</h1>
+
+<table border="1">
+{% for x in myarticles %}
+<tr>
+<td><a href="update/{{ x.id }}">{{ x.id }}</a></td>
+<td>{{ x.title }}</td>
+<td>{{ x.content }}</td>
+<td><a href="delete/{{ x.id }}">delete</a>
+</tr>
+{% endfor %}
+</table>
+
+<p>
+<a href="add/">Add Article</a>
+</p>
+

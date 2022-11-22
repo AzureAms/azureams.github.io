@@ -1,0 +1,12 @@
+<h1>Add Article</h1>
+
+<form action="addrecord/" method="post">
+{% csrf_token %}
+Article title:<br>
+<input name="title">
+<br><br>
+Content:<br>
+<textarea style="height:600px;width:600px;font-size:14pt;" name="content" id ="content"></textarea>
+<br><br>
+<input type="submit" value="Submit">
+</form>
