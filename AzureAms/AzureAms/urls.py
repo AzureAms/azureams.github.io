@@ -18,15 +18,10 @@ from django.urls import path, include
 from article_template import views
 
 urlpatterns = [
-    path('', views.view_article, name='index'),
+    path('', views.index, name='index.html'),
     path('AzureAms/', include('article_template.urls')),
-    path('addArticle', views.view_article, name='index'),
     path('admin/', admin.site.urls),
-    path('add/',views.add, name='add'),
-    path('add/addrecord/', views.addrecord, name='addrecord'),
-    path('delete/<int:order>', views.delete, name='delete'),
-    path('update/<int:order>', views.update, name='update'),
-    path('update/updaterecord/<int:order>', views.updaterecord, name='updaterecord'),
-    path('index.html', views.index, name='index.html')
-
+    path('index.html', views.index, name='index.html'),
+    path('view_article', views.view_article, name='view article'),
+    path('article/<int:order>', views.article_page, name="article_page"),
 ]

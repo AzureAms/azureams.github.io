@@ -105,7 +105,7 @@
             {% for x in myarticles %}
             <div class=" flex justify-center items-stretch">
 
-                <div class="Article w-11/12 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500" onclick="window.location.href='./html/articles/gioi-thieu-ve-swift.html'">
+                <div class="Article w-11/12 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500" onclick="window.location.href='./article/{{x.order}}'">
                     <img alt="" src="{%static x.image1%}"/>
                     <div class="p-4">
                         <div class="author text-md text-light pb-2 flex justify-between">
