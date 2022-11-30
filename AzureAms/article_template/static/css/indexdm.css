@@ -1,0 +1,81 @@
+body {
+  background-color: #303436;
+}
+
+#bg-cover {
+  position: relative;
+}
+
+#btn-container {
+  width: 98.666667%;
+}
+
+#news-container div > div > img {
+  width: 100%;
+}
+
+#btn-container button {
+  background: #051119;
+  -webkit-box-shadow: -4px 7px 7px -1px rgba(0, 0, 0, 0.25);
+          box-shadow: -4px 7px 7px -1px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+
+#join-now-btn {
+  background: #24909d;
+  -webkit-box-shadow: -4px 7px 7px -1px rgba(0, 0, 0, 0.25);
+          box-shadow: -4px 7px 7px -1px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+
+#landing-section {
+  position: relative;
+}
+
+#landing-section #bg-img-container {
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  background: black;
+}
+
+.hide-scroll-bar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.core-image {
+  z-index: 2;
+}
+
+.content {
+  top: 2.5rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 15, 24, 0.92)), to(#020F18));
+  background: linear-gradient(180deg, rgba(2, 15, 24, 0.92) 0%, #020F18 100%);
+}
+
+.skeleton {
+  -webkit-animation: skeleton-loading 1s linear;
+          animation: skeleton-loading 1s linear;
+}
+/*# sourceMappingURL=index.css.map */
+
+/*# changes in Darkmode */
+#changeButton {
+  position:fixed;
+  right:30px;
+  top:0px;
+  z-index:10;
+  height: 90px;  
+  width: 65px;
+}
+.words {
+  color: darkgray /*# bài viết gần đây, core team, page title..*/
+}
+.Article {
+  color: darkgray;
+  background: #353044;
+}

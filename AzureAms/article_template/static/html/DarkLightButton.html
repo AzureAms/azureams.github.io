@@ -1,0 +1,17 @@
+<script>
+    function changeToDark(){
+        document.getElementById("indexLight").href="../css/indexdm.css";
+        document.getElementById("indexLight").id = "indexDark";
+    }
+    function changeToLight(){
+        document.getElementById("indexDark").href="../css/index.css";
+        document.getElementById("indexDark").id="indexLight";
+    }
+    function changeTheme(){
+        if (document.getElementById("indexDark")==null){
+            return changeToDark()
+        }
+        return changeToLight()
+    }
+</script>
+<button id="changeButton" onclick="changeTheme()"><img src="/assets/button.png"></button>

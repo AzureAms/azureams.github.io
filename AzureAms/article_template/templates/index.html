@@ -3,12 +3,12 @@
 <table border="1">
 {% for x in myarticles %}
 <tr>
-<td><a href="update/{{ x.id }}">{{ x.id }}</a></td>
+<td><a href="update/{{ x.order }}">{{ x.order }}</a></td>
 <td>{{ x.title }}</td>
 <td>{{ x.type }}</td>
 <td>{{ x.tomtat }}</td>
 <td>{{ x.content }}</td>
-<td><a href="delete/{{ x.id }}">delete</a>
+<td><a href="delete/{{ x.order }}">delete</a>
 </tr>
 {% endfor %}
 </table>

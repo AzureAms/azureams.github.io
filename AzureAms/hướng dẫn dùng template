@@ -1,2 +1,13 @@
 chào, đây là bài hướng dẫn dùng template cho những ai chưa biết :)
-đầu tiên thì template này dùng django python
+đầu tiên thì template này dùng django python, các b có thể tự học nhé
+Template này sẽ giúp quản lý articles dễ hơn, cũng như nó sẽ tự động sort các article sau lên trước. Có thể tự chỉnh thứ tự nếu muốn nhé
+Để tự bật server trên máy mình thì đánh vào terminal "python manage.py runserver"
+Sau đó đi vào server đã host trên máy (thường là 120.0.0.0:8000)
+
+Để thay đổi danh sách core hay thêm chỉnh bài viết, hãy vào trang /admin, liên hệ a để lấy superuser
+Lưu í khi chỉnh sửa bài viết:
+- Trang 127.0.0.0:8000 là trang để xem qua tất cả bài viết đã có
+- Các bài viết hiện lên sẽ được hiện lên theo thứ tự từ trước tới sau, tức là cái nào có order lớn hơn sẽ hiện lên trước
+- Khi muốn chỉnh sửa bài viết thì ở trang /admin/article_template/article ấn vào order của bài đấy và chỉnh sửa
+- Quan trọng: không được chỉnh order mà xuất hiện 2 cái trùng nhau.
+- Nếu muốn đưa bài viết cũ hiện lên thì vào bài viết đó và chỉnh order thành order lớn nhất lúc đó +1, rồi quay lại trang 127.0.0.0:8000 reload lại để nó tự thay đổi thứ tự, rồi quay lại admin chỉnh sửa tiếp

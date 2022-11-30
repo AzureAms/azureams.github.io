@@ -1,0 +1,50 @@
+body{
+    background-color: #f3f3f3;
+}
+#bg-cover{
+    position: relative
+}
+#btn-container{
+    width: 98.666667%;
+}
+#news-container{
+    div>div>img{
+        width: 100%;
+    }
+}
+#btn-container{
+    button{
+        background: #131F28;
+        box-shadow: -4px 7px 7px -1px rgba(0, 0, 0, 0.25);
+        border-radius: 30px;
+    }
+}
+#join-now-btn{
+    background: rgb(36,144,157);
+        box-shadow: -4px 7px 7px -1px rgba(0, 0, 0, 0.25);
+        border-radius: 30px;
+}
+#landing-section{
+    position: relative;
+    #bg-img-container{
+        filter: blur(10px); background: rgba(0,0,0,51)
+    }
+}
+.hide-scroll-bar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.hide-scroll-bar::-webkit-scrollbar {
+    display: none;
+}
+.core-image{
+    z-index:2;
+}
+.content {
+    top: 2.5rem;
+    background: linear-gradient(180deg, rgba(2, 15, 24, 0.92) 0%, #020F18 100%);
+}
+//skeleton loading animation
+.skeleton{
+    animation: skeleton-loading 1s linear;
+}

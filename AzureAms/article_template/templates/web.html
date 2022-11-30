@@ -1,0 +1,313 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>AzureAms Programming Club</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DLDZZ53PL"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+        
+    gtag('config', 'G-9DLDZZ53PL');
+    </script>
+    <!-- Tailwind CSS -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- FontAwesome 5 -->
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/88fcee8aa9.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSSes-->
+    <link href="{%static 'css/style.css'%}" rel="stylesheet">
+    <link id="indexLight" href="{%static 'css/index.css'%}" rel="stylesheet">
+    <!--Logo-->
+    <link rel="shortcut icon" href="{%static 'assets/favicon_io/favicon.ico'%}">
+    <link rel="icon" href="{%static './assets/favicon_io/favicon-16x16.png'%}" sizes="16x16">
+    <link rel="icon" href="{%static './assets/favicon_io/favicon-32x32.png'%}" sizes="32x32">
+    <link rel="icon" href="{%static 'assets/favicon_io/apple-touch-icon.png'%}" sizes="180x180">
+    <link rel="icon" href="{%static 'assets/favicon_io/android-chrome-192x192.png'%}" sizes="192x192">
+    <link rel="icon" href="{%static 'assets/favicon_io/android-chrome-512x512.png'%}" sizes="512x512">
+</head>
+<body>
+<!--Body view-->
+
+<div id="view bg-gray-50">
+    <!--Header-->
+    <nav class="shadow-md z-10 sticky top-0 navbar nav-active bg-white">
+        <div class="max-w-6xl mx-auto flex justify-between">
+            <!-- Icon -->
+            <div>
+                <a href="web.html"><img src="{%static 'assets/logo.png'%}" alt="logo" class="w-16 my-2 mx-4"></a>
+            </div>
+            <!-- Desktop View -->
+            <div class="hidden sm:flex items-center pr-10 text-3xl font-light uppercase hrefs">
+                <!-- Ở trang nào thì mình sẽ set class active ở trang đấy -->
+                <a href="index.html" class="mx-6 text-center middle active">Trang chủ</a>
+                <a href="html/news.html" class="mx-6 text-center middle">News & Blogs</a>
+                <a href="html/about-us.html" class="mx-6 text-center middle">Về CLB</a>
+            </div>
+            <!-- Mobile Icon -->
+            <button id="mobile-menu-button" class="sm:hidden flex items-center">
+                <i class="fas fa-bars m-2 text-3xl mr-5"></i>
+            </button>
+            <!-- Dark - Light switch -->
+            
+        </div>
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="sm:hidden flex flex-col hidden text-2xl uppercase" >
+            <a href="index.html" class="pl-4 py-2 w-screen">Trang chủ</a>
+            <a href="html/news.html" class="pl-4 py-2 w-screen">Tin tức & Blogs</a>
+            <a href="html/article-page.html" class="pl-4 py-2 w-screen">Về CLB</a>
+        </div>
+        <div id="changeButton"></div>
+    </nav>
+    <!--Overview of the club-->
+    <div class="bg-cover bg-center bg-no-repeat grid grid-col-1 grid-rows-1 justify-center" id="landing-section">
+        <div class="bg row-start-1 col-start-1" id="bg-img-container">
+            <!--Background Image-->
+            <img alt="" src="{%static 'assets/cover.png'%}">
+        </div>
+        <div class="backdrop-filter backdrop-brightness-50 mx-auto row-start-1 col-start-1 grid grid-cols-1 md:grid-cols-2 grid-rows-1 gap-0 justify-center lg:px-24 px-2"
+             style="z-index:2">
+            <!--Left text-->
+            <div class="self-center">
+                <h1 class="text-3xl pt-3 lg:pt-0 lg:text-5xl text-white pb-3 font-bold lg:text-left text-center">
+                    CLB AzureAms hiện đang mở đơn tuyển thành viên
+                </h1>
+                <p class="text-white lg:text-2xl text-md text-center lg:text-left"> Câu lạc bộ chuyên sâu lập trình đầu tiên và duy nhất tại trường THPT Chuyên Hà Nội - Amsterdam</p>
+                <div class="text-2xl lg:text-3xl text-white pb-3 font-bold text-center pt-9 hover:shadow-xl link-app lg:text-left">
+                    <button id="join-now-btn" class="hover:shadow-xl text-white font-bold py-2 px-4 mt-4 " onClick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScQl9AIvzBtCJYJbSorvcS9rFWTI82yJK37ga_T-0zEBKxpRw/viewform?fbclid=IwAR3H91LsjCJlNxSoVNXmKZy2AsIXj_ITDRqKRrky9JhdqOOtKiLQLXcDJ6k', '_blank');" >
+                        Tham gia ngay! <i class="fas fa-angle-right pl-1"></i>
+                    </button>
+                </div>           
+            </div>
+
+            <!--Club logo on the right-->
+            <div class="hidden md:flex justify-center self-center pt-5 pb-5" id="logo-container"
+                 style="height: fit-content">
+                <image src="{%static 'assets/logo.png'%}" style="height: 35vw"></image>
+            </div>
+        </div>
+    </div>
+    <!--Recent news section-->
+    <div class="recent-news justify-center pt-4 m-10 ">
+        <h1 class="words text-4xl text-black font-bold uppercase text-center text-gray-800">
+            Bài viết gần đây
+        </h1>
+        <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 grid-rows-1 pt-10" id="news-container">
+            {% for x in myarticles %}
+            <div class=" flex justify-center items-stretch">
+
+                <div class="Article w-11/12 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500" onclick="window.location.href='./html/articles/gioi-thieu-ve-swift.html'">
+                    <img alt="" src="{%static x.image1%}"/>
+                    <div class="p-4">
+                        <div class="author text-md text-light pb-2 flex justify-between">
+                            <div class="flex align-center">
+                                <i class="fas fa-user-edit mt-1"></i>
+                                <p class="pl-1">AzureAms PR team</p>
+                            </div>
+                            <div>
+                                <p class="px-2 text-white rounded article-category bg-green-600">{{x.type}}</p>
+                            </div>
+                        </div>
+                        <h1 class="font-bold text-2xl">{{x.title}}</h1>
+                        <p class="font-light text-xl">
+                            {{x.tomtat}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            {%endfor%}
+            
+        </div>
+        <div class="flex justify-end " id="btn-container" id="read-more-btn">
+            <button id="read-more-button hover:shadow-xl" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 " onClick="window.location.href='./html/news.html';">
+                Đọc thêm <i class="fas fa-angle-right pl-1"></i>
+            </button>
+        </div>
+    </div>
+    <!--Core team section-->
+    <div class="flex flex-col m-auto p-auto">
+        <!--Title-->
+        <h1 class="words flex py-5 lg:px-20 md:px-10 px-5 lg:mx-40 md:mx-20 mx-5 font-bold text-4xl text-gray-800 justify-center uppercase">
+            Core Team
+        </h1>
+        <!--Core Information Cards-->
+        <div class="flex overflow-x-scroll pb-28 xl-hide-scroll-bar">
+            <div class="flex flex-nowrap lg:ml-2 md:ml-2 ml-2">
+
+
+                <div class="inline-block px-3 relative w-64 max-w-xs flex justify-center">
+                    <!--Avatar-->
+                    <div class="core-image rounded ">
+                        <img alt="" class="w-20 h-20" src="{%static 'assets/thanhphu.png'%}">
+                    </div>
+                    <!--Details-->
+                    <div class="w-48 h-48 content absolute overflow-hidden rounded-lg shadow-md bg-white hover:shadow-2xl transition-shadow duration-300 ease-in-out flex justify-end p-5 content-end flex-col">
+                        <h1 class="text-gray-50 text-center font-bold text-xl pb-2">Phú Thành</h1>
+                        <p class="text-gray-50 font-light text-center">
+                            <i class="fab fa-facebook text-gray-300 text-lg md:text-xl"></i> <a href="https://www.facebook.com/tran.phuthanh.7583">Phú Thành</a>
+                        </p>
+                        <p class="text-gray-50 font-light text-center">
+                            President
+                        </p>
+                    </div>
+                </div>
+                <div class="inline-block px-3 relative w-64 max-w-xs flex justify-center">
+                    <!--Avatar-->
+                    <div class="core-image rounded ">
+                        <img alt="" class="w-20 h-20" src="{%static 'assets/lgb.JPG'%}">
+                    </div>
+                    <!--Details-->
+                    <div class="w-48 h-48 content absolute overflow-hidden rounded-lg shadow-md bg-white hover:shadow-2xl transition-shadow duration-300 ease-in-out flex justify-end p-5 content-end flex-col">
+                        <h1 class="text-gray-50 text-center font-bold text-xl pb-2">Gia Bách</h1>
+                        <p class="text-gray-50 font-light text-center">
+                            <i class="fab fa-github mr-1"></i> <a href="https://github.com/giabach1106">giabach1106</a>
+                        </p>
+                        <p class="text-gray-50 font-light text-center">
+                            Vice President
+                        </p>
+                    </div>
+                </div>
+                <div class="inline-block px-3 relative w-64 max-w-xs flex justify-center">
+                    <!--Avatar-->
+                    <div class="core-image rounded ">
+                        <img alt="" class="w-20 h-20" src="{%static 'assets\canh.png'%}">
+                    </div>
+                    <!--Details-->
+                    <div class="w-48 h-48 content absolute overflow-hidden rounded-lg shadow-md bg-white hover:shadow-2xl transition-shadow duration-300 ease-in-out flex justify-end p-5 content-end flex-col">
+                        <h1 class="text-gray-50 text-center font-bold text-xl pb-2">Công Anh</h1>
+                        <p class="text-gray-50 font-light text-center">
+                            <i class="fab fa-facebook text-gray-300 text-lg md:text-xl"></i> <a href="https://www.facebook.com/canh.soup.5">Canh Soup</a>
+                        </p>
+                        <p class="text-gray-50 font-light text-center">
+                            Vice President
+                        </p>
+                    </div>
+                </div>
+                <div class="inline-block px-3 relative w-64 max-w-xs flex justify-center">
+                    <!--Avatar-->
+                    <div class="core-image rounded ">
+                        <img alt="" class="w-20 h-20" src="{%static 'assets/mdung.png'%}">
+                    </div>
+                    <!--Details-->
+                    <div class="w-48 h-48 content absolute overflow-hidden rounded-lg shadow-md bg-white hover:shadow-2xl transition-shadow duration-300 ease-in-out flex justify-end p-5 content-end flex-col">
+                        <h1 class="text-gray-50 text-center font-bold text-xl pb-2">Minh Dũng</h1>
+                        <p class="text-gray-50 font-light text-center">
+                            <i class="fab fa-github mr-1"></i> <a href="https://github.com/duongphamminhdung">duongdung</a>
+                        </p>
+                        <p class="text-gray-50 font-light text-center">
+                            Project Leader
+                        </p>
+                    </div>
+                </div>
+                <div class="inline-block px-3 relative w-64 h-32 max-w-xs flex justify-center">
+                    <!--Avatar-->
+                    <div class="core-image rounded ">
+                        <img alt="" class="w-20 h-20" src="{%static 'assets/qminh.png'%}">
+                    </div>
+                    <!--Details-->
+                    <div class="w-48 h-48 content absolute overflow-hidden rounded-lg shadow-md bg-white hover:shadow-2xl transition-shadow duration-300 ease-in-out flex justify-end p-5 content-end flex-col">
+                        <h1 class="text-gray-50 text-center font-bold text-xl pb-2">Quang Anh</h1>
+                        <p class="text-gray-50 font-light text-center">
+                            <i class="fab fa-github mr-1"></i> <a href="https://github.com/nqanhhh123">nqanhhh123</a>
+                        </p>
+                        <p class="text-gray-50 font-light text-center">
+                            Project Leader
+                        </p>
+                    </div>
+                </div>
+                <div class="inline-block px-3 relative w-64 max-w-xs flex justify-center">
+                    <!--Avatar-->
+                    <div class="core-image rounded ">
+                        <img alt="" class="w-20 h-20" src="{%static 'assets/tluong.png'%}" style="border-radius: 50%">
+                    </div>
+                    <!--Details-->
+                    <div class="w-48 h-48 content absolute overflow-hidden rounded-lg shadow-md bg-white hover:shadow-2xl transition-shadow duration-300 ease-in-out flex justify-end p-5 content-end flex-col">
+                        <h1 class="text-gray-50 text-center font-bold text-xl pb-2">Thiên Lương</h1>
+                        <p class="text-gray-50 font-light text-center">
+                            <i class="fab fa-facebook text-gray-300 text-lg md:text-xl"></i> <a href="https://www.facebook.com/profile.php?id=100072438370052">Lương Nguyễn</a>
+                        </p>
+                        <p class="text-gray-50 font-light text-center">
+                            Head of Pr
+                        </p>
+                    </div>
+                </div>
+                <div class="inline-block px-3 relative w-64 max-w-xs flex justify-center">
+                    <!--Avatar-->
+                    <div class="core-image rounded ">
+                        <img alt="" class="w-20 h-20" src="{%static 'assets/lebach.png'%}" style="border-radius: 50%">
+                    </div>
+                    <!--Details-->
+                    <div class="w-48 h-48 content absolute overflow-hidden rounded-lg shadow-md bg-white hover:shadow-2xl transition-shadow duration-300 ease-in-out flex justify-end p-5 content-end flex-col">
+                        <h1 class="text-gray-50 text-center font-bold text-xl pb-2">Lê Bách</h1>
+                        <p class="text-gray-50 font-light text-center">
+                            <i class="fab fa-facebook text-gray-300 text-lg md:text-xl"></i> <a href="https://www.facebook.com/profile.php?id=100025771714156">Bách Lê</a>
+                        </p>
+                        <p class="text-gray-50 font-light text-center">
+                            Head of Events
+                        </p>
+                    </div>
+                </div>
+                <div class="inline-block px-3 relative w-64 max-w-xs flex justify-center">
+                    <!--Avatar-->
+                    <div class="core-image rounded ">
+                        <img alt="" class="w-20 h-20" src="{%static 'assets/hphat.png'%}" style="border-radius: 50%">
+                    </div>
+                    <!--Details-->
+                    <div class="w-48 h-48 content absolute overflow-hidden rounded-lg shadow-md bg-white hover:shadow-2xl transition-shadow duration-300 ease-in-out flex justify-end p-5 content-end flex-col">
+                        <h1 class="text-gray-50 text-center font-bold text-xl pb-2">Hữu Phát</h1>
+                        <p class="text-gray-50 font-light text-center">
+                            <i class="fab fa-github mr-1"></i> <a href="https://github.com/tuciphat2507">tuciphat2507</a>
+                        </p>
+                        <p class="text-gray-50 font-light text-center">
+                            Head of Med - Des
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="flex flex-col md:flex-row justify-between bg-black">
+            <!-- Icon -->
+            <div class="order-2 my-auto hidden md:block">
+                <img src="{%static 'assets/logo.png'%}" alt="logo" class="w-40 mx-20">
+            </div>
+            <!-- Contacts -->
+            <div class="order-1 mx-auto md:mx-12 md:my-6">
+                <p class="text-gray-300 font-light text-center text-lg md:text-2xl mt-4 md:mt-0">Liên hệ</p>
+                <div class="flex flex-col m-2">
+                    <div class="flex my-2">
+                        <i class="fas fa-phone-alt text-gray-300 text-lg md:text-xl"></i>
+                        <p class="text-gray-300 mx-4 font-light text-xs md:text-base mt-1 md:mt-0">(+84) 975 277 777</p>
+                    </div>
+                    <div class="flex my-2">
+                        <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=azureamsprogrammingclub@gmail.com"><i class="far fa-envelope text-gray-300 text-lg md:text-xl"></i></a>
+                        <p class="text-gray-300 mx-4 font-light text-xs md:text-base mt-1 md:mt-0">azureamsprogrammingclub@gmail.com</p>
+                    </div>
+
+                    <div class="flex my-2">
+                        <a href="https://www.facebook.com/azureamsprogramming"><i class="fab fa-facebook text-gray-300 text-lg md:text-xl"></i></a>
+                        <a href="https://www.facebook.com/azureamsprogramming"><p class="text-gray-300 mx-4 font-light hover:text-white text-xs md:text-base mt-1 md:mt-0">https://www.facebook.com/azureamsprogramming</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<!-- JQuery 3.6.0 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="{%static 'js/app.js"'%}'></script>
+
+</body>
+</html>
