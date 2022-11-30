@@ -45,7 +45,13 @@ def index(request):
 def article_page(request, order):
     template = loader.get_template('articleTemplate.html')
     article = Article.objects.get(order = order)
+    myarticles = []
+    for i in Article.objects.all()[::-1]:
+        if len(myarticles) != 2:
+            if i.order != order:
+                myarticles.append(i)
     context = {
         'article': article,
+        'myarticles':myarticles,
     }
     return HttpResponse(template.render(context, request))

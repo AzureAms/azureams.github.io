@@ -26,6 +26,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- Custom CSSes-->
     <link href="{%static 'css/style.css'%}" rel="stylesheet">
+    <link href="{%static 'css/article.css'%}" rel="stylesheet">
+
     <link id="indexLight" href="{%static 'css/index.css'%}" rel="stylesheet">
     <!--Logo-->
     <link rel="shortcut icon" href="{%static 'assets/favicon_io/favicon.ico'%}">
@@ -66,7 +68,7 @@
     </nav>
     <div>
         <div class="bg-img-container w-full"
-             style='background-image: (src="{%static article.image1%}");'></div>
+             style="background-image: url('{%static article.image2 %}'); height:215px;"></div>
         <div class="article grid grid-cols-1 md:grid-cols-3 md:mx-14 mx-3 my-10 md:gap-10 z-10">
             <div class="article-content col-span-2 col-start-1 w-full md:shadow px-2 md:px-14 py-5">
                 <h1 class="text-bold text-2xl mb-3 lg:text-5xl">{{article.title}}</h1>
@@ -76,85 +78,24 @@
                 </div>
                 <p class="text-justify font-light sm:text-md" style="white-space:pre-wrap">{{article.content}}</p>
             </div>
+            {%for x in myarticles%}
+            <div class="flex flex-col  items-center hidden md:flex">
 
-            <div class="list col-span-1 col-start-3 w-full hidden md:block">
-                <h1 class="font-light text-2xl">Related news</h1>
-                <hr class="mb-10">
-                <div class="flex flex-col  items-center hidden md:flex">
-
-                    <div class="flex flex-row mb-5 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500" onclick="window.location.href='./article/{{article.order}}'">
-                        <div class="img-container"
-                             style="background-image: url(../../assets/thumbnails/timetable_beta_0.1.png);"></div>
-                        <div class="p-4 bg-white">
-                            <div class="author text-md text-light pb-2 flex items-center">
-                                <i class="fas fa-user-edit"></i>
-                                <p class="pl-1">AzureAms PR Team
-                                </p>
-                            </div>
-                            <h1 class="font-bold text-2xl">Ra mắt Timetable App Beta
-                            </h1>
-                            <p class="font-light text-xl">
-                                Để giúp đơn giản hóa việc tham gia lớp học online, AzureAms đã tạo ra sản phẩm website + app Timetable...
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex flex-row mb-5 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500" onclick="window.location.href='./gioi-thieu-ve-website.html'">
-                        <div class="img-container"
-                             style="background-image: url(../../assets/thumbnails/azureams_website_0_1release.png);"></div>
-                        <div class="p-4 bg-white">
-                            <div class="author text-md text-light pb-2 flex items-center">
-                                <i class="fas fa-user-edit"></i>
-                                <p class="pl-1">AzureAms PR Team
-                                </p>
-                            </div>
-                            <h1 class="font-bold text-2xl">Ra mắt website Beta
-                            </h1>
-                            <p class="font-light text-xl">
-                                Sau hơn 1 tuần làm việc, bản beta đầu tiên của website đã hoàn thiện. Website được host bằng GitHub Pages...
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="list w-full md:hidden block px-3 py-5">
-            <h1 class="font-light text-2xl">Related news</h1>
-            <hr class="mb-10">
-            <div class="flex flex-col justify-start items-center md:hidden">
-
-                <div class="flex flex-row mb-5 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500" onclick="window.location.href='./article-timetable.html'">
+                <div class="flex flex-row mb-5 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500" onclick="window.location.href='./{{x.id}}'">
                     <div class="img-container"
-                         style="background-image: url(../../assets/thumbnails/timetable_beta_0.1.png);"></div>
+                         style="background-image: url('{%static x.image1 %}');"></div>
                     <div class="p-4 bg-white">
                         <div class="author text-md text-light pb-2 flex items-center">
                             <i class="fas fa-user-edit"></i>
                             <p class="pl-1">AzureAms PR Team
                             </p>
                         </div>
-                        <h1 class="font-bold text-2xl">Ra mắt Timetable App Beta
+                        <h1 class="font-bold text-2xl">{{x.title}}
                         </h1>
-                        <p class="font-light text-xl">
-                            Để giúp đơn giản hóa việc tham gia lớp học online, AzureAms đã tạo ra sản phẩm website + app Timetable...
-                        </p>
+                        <p class="font-light text-xl">{{x.tomtat}}</p>
                     </div>
                 </div>
-                <div class="flex flex-row rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500" onclick="window.location.href='./gioi-thieu-ve-website.html'">
-                    <div class="img-container"
-                         style="background-image: url(../../assets/thumbnails/azureams_website_0_1release.png);"></div>
-                    <div class="p-4 bg-white">
-                        <div class="author text-md text-light pb-2 flex items-center">
-                            <i class="fas fa-user-edit"></i>
-                            <p class="pl-1">AzureAms PR Team
-                            </p>
-                        </div>
-                        <h1 class="font-bold text-2xl">Ra mắt website Beta
-                        </h1>
-                        <p class="font-light text-xl">
-                            Sau hơn 1 tuần làm việc, bản beta đầu tiên của website đã hoàn thiện. Website được host bằng GitHub Pages...
-                        </p>
-                    </div>
-
-                </div>
+            {%endfor%}
             </div>
         </div>
     </div>
