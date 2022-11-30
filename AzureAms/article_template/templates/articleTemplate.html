@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>article.title</title>
+    <title>{{article.title}}</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DLDZZ53PL"></script>
     <script>
@@ -43,12 +43,12 @@
         <div class="max-w-6xl mx-auto flex justify-between">
             <!-- Icon -->
             <div>
-                <a href="../../index.html"><img alt="logo" class="w-16 my-2 mx-4" src="../../assets/logo.png"></a>
+                <a href="../index.html"><img alt="logo" class="w-16 my-2 mx-4'%}" src="{%static 'assets/logo.png'%}"></a>
             </div>
             <!-- Desktop View -->
             <div class="hidden sm:flex items-center pr-10 text-3xl font-light uppercase hrefs">
                 <!-- Ở trang nào thì mình sẽ set class active ở trang đấy -->
-                <a class="mx-6 text-center middle" href="../../index.html">TRANG CHỦ</a>
+                <a class="mx-6 text-center middle" href="../index.html">TRANG CHỦ</a>
                 <a class="mx-6 text-center middle active" href="../news.html">News & Blogs</a>
                 <a class="mx-6 text-center middle" href="../about-us.html">Về CLB</a>
             </div>
@@ -59,254 +59,22 @@
         </div>
         <!-- Mobile Dropdown -->
         <div class="sm:hidden flex flex-col hidden text-2xl uppercase" id="mobile-menu">
-            <a class="pl-4 py-2 w-screen" href="../../index.html">Trang Chủ</a>
+            <a class="pl-4 py-2 w-screen" href="../index.html">Trang Chủ</a>
             <a class="pl-4 py-2 w-screen" href="../news.html">News & Blogs</a>
             <a class="pl-4 py-2 w-screen" href="../about-us.html">Về CLB</a>
         </div>
     </nav>
     <div>
         <div class="bg-img-container w-full"
-             style="background-image: url(https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80);"></div>
+             style='background-image: (src="{%static article.image1%}");'></div>
         <div class="article grid grid-cols-1 md:grid-cols-3 md:mx-14 mx-3 my-10 md:gap-10 z-10">
             <div class="article-content col-span-2 col-start-1 w-full md:shadow px-2 md:px-14 py-5">
-                <h1 class="text-bold text-2xl mb-3 lg:text-5xl">Một số mẹo C++ trong phòng thi</h1>
+                <h1 class="text-bold text-2xl mb-3 lg:text-5xl">{{article.title}}</h1>
                 <hr>
                 <div class="details md:flex justify-start mb-1 items-center">
-                    <p class="font-light sm:text-xs"><i class="far fa-clock"></i> 12/09/2021</p>
                     <p class="font-light sm:text-xs md:ml-5"><i class="fas fa-user-edit"></i> Azure Ams PR Team</p>
                 </div>
-                <p class="text-justify font-light sm:text-md">
-                    Có lẽ, không có kỳ thi nào đòi hỏi kỹ năng thi cao hơn các kỳ thi học sinh giỏi môn Tin học. Đã có
-                    rất nhiều thí sinh tiềm năng mất đi cơ hội đạt các giải cao hơn, hoặc tiến vào các vòng tiếp theo,
-                    chỉ vì một số lỗi rất cơ bản. Trong loạt blog này, mình sẽ tổng hợp một số lỗi thường gặp, và cách
-                    phòng tránh chúng.
-                </p>
-                <h1 class="text-bold text-xl mb-3 lg:text-2xl">Lỗi quên "xóa debug"</h1>
-                <p class="text-justify font-light sm:text-md">
-                    Đã có rất nhiều thế hệ học sinh chuyên Tin ra khỏi phòng thi rất tự tin, vì mình đã, sau hơn 1 tiếng
-                    chỉnh đi chỉnh lại code đã AC full một bài quan trọng. Nhưng rồi lúc nhận kết quả thì bài đó... 0
-                    điểm, đến lúc xin lại được code thì nhận ra mình... quên xóa debug.
-                    Xóa debug ở đây không chỉ là những lỗi ngớ ngẩn như:
-                </p>
-                <code>
-                    cout << "Ok here" << endl;
-                </code>
-                <p class="text-justify font-light sm:text-md">Mà còn có có thể hiểu rộng ra, ví dụ như một lỗi kinh
-                    điển:</p>
-                <code>
-                    freopen("BAI1.INP", "r", stdin);
-                    <br>//freopen("BAI1.OUT", "w", stdout);
-                </code>
-                <p class="text-justify font-light sm:text-md">(a.k.a quên <code>freopen</code>, in ra màn hình trong quá
-                    trình debug cho tiện.)
-                    Hay một ví dụ hài hước hơn, (thực tế 1 Amser đã bị hồi 2019):</p>
-                <code>
-                    cin >> a;
-                    <br>a = 4; // Để đây debug cho tiện, đỡ phải nhập đi nhập lại test mẫu nhỉ.</br>
-                </code>
-                <p class="text-justify font-light sm:text-md">Thường thì vì mẫy lỗi này, chúng ta... mất trắng một bài,
-                    may ra thì ăn được vài trường hợp đặc biêt.</p>
-                <h1 class="text-bold text-xl mb-3 lg:text-2xl">Phòng tránh?</h1>
-                <p class="text-justify font-light sm:text-md">
-                    Cách phòng tránh dễ nhất lỗi "quên" là... nhớ thôi! Nhưng đâu phải lúc nào cũng vậy? Có thể một bài
-                    nào đó bạn in debug chi chít, đã xóa đủ debug để test mẫu chạy trơn tru, nhưng vẫn để vài dòng
-                    <code>cout</code> lơ lửng ở mấy trường hợp còn lại. Hoặc có thể, bạn đang vội code nốt subtask cuối
-                    trong vài phút còn lại, rồi chưa kịp tìm debug hết thì giám thị đã đến tận nơi bạn tắt màn hình :(.
-
-                    Vậy thì có cách nào phù phép cho các lệnh debug bay hết đi trên server chấm không?
-
-                    Trong C++ có đó.
-                </p>
-                <h1 class="text-bold text-xl mb-3 lg:text-2xl">Macros</h1>
-                <p class="text-justify font-light sm:text-md">
-                    Nếu các bạn nào đã tìm hiểu một số sản phẩm mã nguồn mở, chúng ta sẽ bắt gặp một số đoạn code kiểu
-                    như:
-                </p>
-                <code>
-                    #ifdef _DEBUG
-                    <br>
-                    // Làm gì đó...
-                    <br>
-                    #else
-                    <br>
-                    // Làm việc khác.
-                    <br>
-                    #endif
-                </code>
-                <p class="text-justify font-light sm:text-md mt-3">
-                    <code>_DEBUG</code> ở đây chính là một "macro", một thành phần ngôn ngữ được định nghĩa bởi các câu
-                    lệnh <code>#define</code>. Trước đây có lẽ các bạn đã sử dụng các dòng <code>#define</code> để định
-                    nghĩa hằng số:
-                </p>
-                <code>#define MOD ((int)1e9 + 7)</code>
-                <p class="text-justify font-light sm:text-md mt-3">Hoặc để rút gọn một số thứ, ví dụ như:</p>
-                <code>#define ALL(x) ((x).begin()), ((x).end())</code>
-                <p class="text-justify font-light sm:text-md mt-3">Ngoài công dụng thay thế một từ thành một đoạn code
-                    trước khi biên dịch, các macro trong C/C++ còn có tác dụng đánh dấu:
-                    <br>
-                    Ví dụ với đoạn code:
-                </p>
-                <pre>
-#include &ltiostream&gt
-using namespace std;
-
-int main()
-{
-	#ifdef DEBUG
-	cout << "Hello Debug!" << endl;
-	#endif
-	return 0;
-}
-                </pre>
-                <p class="text-justify font-light sm:text-md mt-3">
-                    Chúng ta sẽ thử chạy đoạn code này và:
-                </p>
-                <pre>
---------------------------------
-Process exited after 865 milliseconds with return value 0
-Press any key to continue . . .
-                </pre>
-                <p class="text-justify font-light sm:text-md mt-3">
-                    Không có gì được in ra<br>
-                    Nhưng ta hãy thử thêm 1 dòng <code>#define DEBUG</code> xem sao nhỉ?
-                </p>
-                <pre>
-#include &ltiostream&gt
-using namespace std;
-
-#define DEBUG
-
-int main()
-{
-	#ifdef DEBUG
-	cout << "Hello Debug!" << endl;
-	#endif
-	return 0;
-}
-                </pre>
-                <p class="text-justify font-light sm:text-md mt-3">
-                    Quan sát output, sẽ thấy:
-                </p>
-                <pre>
-Hello Debug!
-
---------------------------------
-Process exited after 1073 milliseconds with return value 0
-Press any key to continue . . .
-                </pre>
-                <p class="text-justify font-light sm:text-md mt-3">
-                    Tại sao lại như vậy?<br>
-                    Lệnh <code>#ifdef</code> ở đây, sẽ khiến cho trình tiền xử lý (preprocessor) kiểm tra xem thành phần
-                    ngôn ngữ đứng sau đã được định nghĩa bằng <code>#define</code> chưa, nếu đã được định nghĩa, trình
-                    xử lý này sẽ giữ nguyên đoạn mã nguồn giữa lệnh <code>#ifdef</code> này và lệnh <code>#endif</code>
-                    gần nhất. Trái lại, tất cả các đoạn mã nguồn giữa 2 lệnh trên bị loại bỏ.
-                    <br>
-                    Ngoài ra, ta còn có lệnh <code>#ifndef</code>, là một thứ trái ngược hoàn toàn của
-                    <code>#ifdef</code>: Chỉ giữ lại đoạn mã nguồn sau, nếu thành phần đứng sau CHƯA ĐƯỢC ĐỊNH NGHĨA BỞI
-                    <code>DEFINE</code>.
-                    <br>
-                    Giờ thì, ta có thể viết những đoạn code như:
-                </p>
-                <pre>
-#define DEBUG
-
-freopen("BAI1.INP", "r", stdin);
-#ifndef DEBUG
-// Trong lúc DEBUG ta muốn in ra màn hình.
-freopen("BAI1.OUT", "w", stdout);
-#endif
-
-int a;
-#ifdef DEBUG
-// Lười nhập test mẫu, nhưng không sao.
-a = 4;
-#else // #else ở đây hoạt động như `else` bình thường
-// Chỉ khác là nó cặp với #ifdef thay vì cặp với `if` thường.
-cin >> a;
-#endif
-
-#ifdef DEBUG
-cout << "Ok here." << endl;
-#endif
-                </pre>
-                <p class="text-justify font-light sm:text-md mt-3">
-                    Và trước giờ thi, ta chỉ cần xóa dòng <code>#define DEBUG</code> ở đầu.
-                </p>
-                <h1 class="text-bold text-xl mb-3 lg:text-2xl">Thế nhưng quên xóa cái <code>#define DEBUG</code> ở đầu
-                    thì sao?</h1>
-                <p class="text-justify font-light sm:text-md mt-3">
-                    Thì toang. Chấm hết.<br>
-                    Nhưng chưa hết, ta vẫn có một cách để kích hoạt <code>DEBUG</code> mà không cần thêm <code>#define
-                    DEBUG</code> ở đầu.<br>
-                    Lọ mọ một chút <a href="https://gcc.gnu.org/onlinedocs/gcc/Preprocessor-Options.html"
-                                      style="text-decoration: blue !important;">[docs của GCC]</a>, ta thấy:
-                </p>
-                <pre>
--D name
-Predefine name as a macro, with definition 1.
-                </pre>
-                <p class="text-justify font-light sm:text-md mt-3">
-                    Giờ thì ta sẽ quay lại ví dụ đầu tiên:
-                </p>
-                <pre>
-#include &ltiostream&gt
-using namespace std;
-
-int main()
-{
-	#ifdef DEBUG
-	cout << "Hello Debug!" << endl;
-	#endif
-	return 0;
-}
-                </pre>
-                <p class="text-justify font-light sm:text-md mt-3">
-                    Thử biên dịch lại đoạn mã nguồn này, với câu lệnh: <code>g++ hello.cpp -o hello.exe -DDEBUG</code>
-                    xem ra sao:
-                </p>
-                <pre>
-Hello Debug!
-
---------------------------------
-Process exited after 690 milliseconds with return value 0
-Press any key to continue . . .
-                </pre>
-                <p class="text-justify font-light sm:text-md mt-3">
-                    Hay! Chúng ta đã... kích hoạt <code>DEBUG</code> mà không cần thêm dòng lệnh nào!
-
-                    Một cái hay khác là, Themis - trình chấm được sử dụng phổ biến trong các kỳ thi Học sinh giỏi từ
-                    thành phố đến quốc gia, không kích hoạt <code>-DDEBUG</code>:
-                </p>
-                <code>"C:\Program Files (x86)\Themis\gcc\bin\g++.exe" -std=c++14 "%NAME%%EXT%" -pipe -O2 -s -static -lm
-                    -x c++ -o"%NAME%.exe" -Wl,--stack,66060288|@WorkDir=%PATH%
-                </code>
-                <p class="text-justify font-light sm:text-md mt-3">
-                    Vậy là, trên máy tính thi, code sẽ chạy DEBUG đầy đủ, nhưng trên máy chấm, những dòng này... biến
-                    mất??
-                    <br>
-                    Vậy làm thế nào để thêm <code>-DDEBUG</code> khi sử dụng Dev-C++ hoặc Code::Blocks?
-                    Các bạn hãy vào Compiler Settings, rồi trong cái mục chỉnh "Compiler Flags", thêm
-                    <code>-DDEBUG</code> vào, là xong!
-                    <br>
-                    (Ở trong Dev-C++, "Compiler Settings" có thể truy cập ở `Tools -> Compiler Options`. Nhớ đánh dấu
-                    "Add the following commands when calling the compiler", và thêm options vào ô chữ ở dưới.)
-                </p>
-                <img alt="" src="../../assets/Huong-Dan-Debug-Cpp-Img-1.png">
-                <h1 class="text-bold text-xl mb-3 lg:text-2xl">Một vài lời bình luận thêm:</h1>
-                <p class="text-justify font-light sm:text-md mt-3">
-                    - Tên <code>DEBUG</code>rất phổ thông, và dễ bị đụng với các headers hệ thống. Để tránh sự đụng độ
-                    này, ta sẽ <code>#define</code> một cái tên khác, riêng biệt hơn, ví dụ như <code>Carano</code>
-                    chẳng hạn. Nếu đặt tên như vậy, nhớ thay thế <code>-DDEBUG</code> bằng <code>-DCarano</code>.
-                    <br>
-                    - Nếu Volkath được cử đi chấm bài và biết chuyện này, hắn ta cũng có thể thêm <code>-DCarano</code>
-                    vào Themis! Vì vậy, tuy hiếm có trường hợp thầy cô cố tình thêm macros, nhưng trong các kỳ thi quan
-                    trọng, chúng ta vẫn <b>nên</b> xóa debug khi <b>còn thời gian</b>, tránh các rủi ro do macros đem
-                    lại.
-                </p>
-                <p class="text-justify font-light sm:text-md mt-3">(Còn nữa)</p>
-                <p class="text-justify font-light sm:text-md mt-3"><i>Các bạn hãy theo dõi loạt blog của mình, cũng như
-                    Fanpage và trang web của AzureAms để nhận thêm nhiều thông tin hữu ích như này nhé. Xin cảm ơn!</i>
-                </p>
+                <p class="text-justify font-light sm:text-md" style="white-space:pre-wrap">{{article.content}}</p>
             </div>
 
             <div class="list col-span-1 col-start-3 w-full hidden md:block">
@@ -314,7 +82,7 @@ Press any key to continue . . .
                 <hr class="mb-10">
                 <div class="flex flex-col  items-center hidden md:flex">
 
-                    <div class="flex flex-row mb-5 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500" onclick="window.location.href='./article-timetable.html'">
+                    <div class="flex flex-row mb-5 rounded-md cursor-pointer shadow-lg overflow-hidden hover:shadow-xl transform hover:scale-105 duration-500" onclick="window.location.href='./article/{{article.order}}'">
                         <div class="img-container"
                              style="background-image: url(../../assets/thumbnails/timetable_beta_0.1.png);"></div>
                         <div class="p-4 bg-white">
@@ -396,7 +164,7 @@ Press any key to continue . . .
         <div class="flex flex-col md:flex-row justify-between bg-black">
             <!-- Icon -->
             <div class="order-2 my-auto hidden md:block">
-                <img alt="logo" class="w-40 mx-20" src="../../assets/logo.png">
+                <img alt="logo" class="w-40 mx-20" src="{%static 'assets/logo.png'%}">
             </div>
             <!-- Contacts -->
             <div class="order-1 mx-auto md:mx-12 md:my-6">
@@ -427,6 +195,6 @@ Press any key to continue . . .
 
 <!-- JQuery 3.6.0 -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="../../js/article.js"></script>
+<script src="{%static 'js/article.js'%}"></script>
 </body>
 </html>
