@@ -9,4 +9,4 @@ class ArticleAdmin(admin.ModelAdmin):
 
 @admin.register(Core)
 class CoreAdmin(admin.ModelAdmin):
-    list_display = ['position', 'name']
+    list_display = ['order', 'position', 'name']

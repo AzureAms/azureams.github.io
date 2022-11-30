@@ -38,6 +38,7 @@ def index(request):
     template = loader.get_template('index.html')
     context = {
     'myarticles': myarticles[len(myarticles)-3:],
+    'cores':cores,
     }
     return HttpResponse(template.render(context, request))
 

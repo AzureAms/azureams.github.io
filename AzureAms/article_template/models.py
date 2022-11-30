@@ -32,3 +32,7 @@ class Core(models.Model):
     url_type = models.CharField(max_length=100, choices=(("fab fa-facebook text-gray-300 text-lg md:text-xl", "facebook"),("fab fa-github mr-1", "github")))
     url_name = models.CharField(max_length=15)
     position = models.CharField(max_length=100, choices=positionToChoose)
+    order = models.PositiveIntegerField()
+    
+    class Meta:
+        ordering = ('order',)
