@@ -55,3 +55,12 @@ def article_page(request, order):
         'myarticles':myarticles,
     }
     return HttpResponse(template.render(context, request))
+
+def view_all_article(request):
+    template = loader.get_template('news.html')
+    article = Article.objects.all().values()
+    context = {
+        'article':article[::-1],
+    }
+    return HttpResponse(template.render(context, request))
+
