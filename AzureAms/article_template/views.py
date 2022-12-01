@@ -59,8 +59,12 @@ def article_page(request, order):
 def view_all_article(request):
     template = loader.get_template('news.html')
     article = Article.objects.all().values()
+    if len(article) > 6:
+        last = 6
+    else:
+        last = len(article)
     context = {
-        'article':article[::-1],
+        'article':article[::-1][:last],
     }
     return HttpResponse(template.render(context, request))
 
